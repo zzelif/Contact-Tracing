@@ -40,6 +40,10 @@ namespace Contact_Tracing
             file.WriteLine("Relationship : " + txtRelationship.Text);
             file.WriteLine("Contact Number: " + txtContactno.Text);
             file.WriteLine("");
+            file.WriteLine("Have you been experiencing ailments and/or symptoms?");
+            file.WriteLine(txtQuestion.Text);
+            file.WriteLine("Have you been in contact with anyone?");
+            file.WriteLine(txtQuestion1.Text);
             file.Close();
             MessageBox.Show("Thank you for filling up this form!");
         }
