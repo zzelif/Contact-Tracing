@@ -23,6 +23,7 @@ namespace Contact_Tracing
             StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing.txt", true);
             file.WriteLine("First Name: " + txtFirstname.Text);
             file.WriteLine("Middle Name: " + txtMidname.Text);
+            file.WriteLine("Last Name: " + txtLastname.Text);
             file.Close();
             MessageBox.Show("Thank you for filling up this form!");
         }
