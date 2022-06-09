@@ -32,6 +32,10 @@ namespace Contact_Tracing
             file.WriteLine("Email Address: " + txtEmail.Text);
             file.WriteLine("Address: " + txtAddress.Text + txtAddress1.Text + txtAddress2.Text + 
                 txtAddress3.Text + txtAddress4.Text + txtAddress5.Text);
+            file.WriteLine("In case of emergency");
+            file.WriteLine("Emergency Contact: " + txtEmergencyname.Text);
+            file.WriteLine("Relationship : " + txtRelationship.Text);
+            file.WriteLine("Contact Number: " + txtContactno.Text);
             file.Close();
             MessageBox.Show("Thank you for filling up this form!");
         }
