@@ -67,6 +67,12 @@
             this.lblRelationship = new System.Windows.Forms.Label();
             this.txtContactno = new System.Windows.Forms.TextBox();
             this.lblContactno = new System.Windows.Forms.Label();
+            this.lblQuestion1 = new System.Windows.Forms.Label();
+            this.txtQuestion = new System.Windows.Forms.TextBox();
+            this.lblYesorno = new System.Windows.Forms.Label();
+            this.lblQuestion = new System.Windows.Forms.Label();
+            this.txtQuestion1 = new System.Windows.Forms.TextBox();
+            this.lblYesorno1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).BeginInit();
             this.SuspendLayout();
             // 
@@ -511,12 +517,88 @@
             this.lblContactno.TabIndex = 50;
             this.lblContactno.Text = "Contact Number";
             // 
+            // lblQuestion1
+            // 
+            this.lblQuestion1.AutoSize = true;
+            this.lblQuestion1.BackColor = System.Drawing.Color.Transparent;
+            this.lblQuestion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion1.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lblQuestion1.Location = new System.Drawing.Point(721, 188);
+            this.lblQuestion1.Name = "lblQuestion1";
+            this.lblQuestion1.Size = new System.Drawing.Size(340, 22);
+            this.lblQuestion1.TabIndex = 51;
+            this.lblQuestion1.Text = "Contact with anyone within 2 weeks?";
+            // 
+            // txtQuestion
+            // 
+            this.txtQuestion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtQuestion.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuestion.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.txtQuestion.Location = new System.Drawing.Point(801, 119);
+            this.txtQuestion.Multiline = true;
+            this.txtQuestion.Name = "txtQuestion";
+            this.txtQuestion.Size = new System.Drawing.Size(172, 34);
+            this.txtQuestion.TabIndex = 52;
+            // 
+            // lblYesorno
+            // 
+            this.lblYesorno.AutoSize = true;
+            this.lblYesorno.BackColor = System.Drawing.Color.Transparent;
+            this.lblYesorno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYesorno.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lblYesorno.Location = new System.Drawing.Point(845, 157);
+            this.lblYesorno.Name = "lblYesorno";
+            this.lblYesorno.Size = new System.Drawing.Size(83, 20);
+            this.lblYesorno.TabIndex = 53;
+            this.lblYesorno.Text = "Yes or No";
+            // 
+            // lblQuestion
+            // 
+            this.lblQuestion.AutoSize = true;
+            this.lblQuestion.BackColor = System.Drawing.Color.Transparent;
+            this.lblQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lblQuestion.Location = new System.Drawing.Point(725, 82);
+            this.lblQuestion.Name = "lblQuestion";
+            this.lblQuestion.Size = new System.Drawing.Size(324, 22);
+            this.lblQuestion.TabIndex = 54;
+            this.lblQuestion.Text = "Experiencing symptoms? Ailments?";
+            // 
+            // txtQuestion1
+            // 
+            this.txtQuestion1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtQuestion1.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuestion1.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.txtQuestion1.Location = new System.Drawing.Point(801, 216);
+            this.txtQuestion1.Multiline = true;
+            this.txtQuestion1.Name = "txtQuestion1";
+            this.txtQuestion1.Size = new System.Drawing.Size(172, 34);
+            this.txtQuestion1.TabIndex = 55;
+            // 
+            // lblYesorno1
+            // 
+            this.lblYesorno1.AutoSize = true;
+            this.lblYesorno1.BackColor = System.Drawing.Color.Transparent;
+            this.lblYesorno1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYesorno1.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lblYesorno1.Location = new System.Drawing.Point(845, 254);
+            this.lblYesorno1.Name = "lblYesorno1";
+            this.lblYesorno1.Size = new System.Drawing.Size(83, 20);
+            this.lblYesorno1.TabIndex = 56;
+            this.lblYesorno1.Text = "Yes or No";
+            // 
             // formcttracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1073, 573);
+            this.Controls.Add(this.lblYesorno1);
+            this.Controls.Add(this.txtQuestion1);
+            this.Controls.Add(this.lblQuestion);
+            this.Controls.Add(this.lblYesorno);
+            this.Controls.Add(this.txtQuestion);
+            this.Controls.Add(this.lblQuestion1);
             this.Controls.Add(this.lblContactno);
             this.Controls.Add(this.txtContactno);
             this.Controls.Add(this.lblRelationship);
@@ -604,6 +686,12 @@
         private System.Windows.Forms.Label lblRelationship;
         private System.Windows.Forms.TextBox txtContactno;
         private System.Windows.Forms.Label lblContactno;
+        private System.Windows.Forms.Label lblQuestion1;
+        private System.Windows.Forms.TextBox txtQuestion;
+        private System.Windows.Forms.Label lblYesorno;
+        private System.Windows.Forms.Label lblQuestion;
+        private System.Windows.Forms.TextBox txtQuestion1;
+        private System.Windows.Forms.Label lblYesorno1;
     }
 }
 
