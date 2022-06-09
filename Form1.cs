@@ -30,7 +30,8 @@ namespace Contact_Tracing
             file.WriteLine("Gender: " + txtGender.Text);
             file.WriteLine("Phone number: " + txtNumber.Text);
             file.WriteLine("Email Address: " + txtEmail.Text);
-
+            file.WriteLine("Address: " + txtAddress.Text + txtAddress1.Text + txtAddress2.Text + 
+                txtAddress3.Text + txtAddress4.Text + txtAddress5.Text);
             file.Close();
             MessageBox.Show("Thank you for filling up this form!");
         }

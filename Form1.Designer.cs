@@ -52,13 +52,13 @@
             this.lblAddress1 = new System.Windows.Forms.Label();
             this.txtAddress1 = new System.Windows.Forms.TextBox();
             this.lblAddress2 = new System.Windows.Forms.Label();
-            this.txtAddress3 = new System.Windows.Forms.TextBox();
+            this.txtAddress2 = new System.Windows.Forms.TextBox();
             this.lblAddress3 = new System.Windows.Forms.Label();
-            this.txtAddress4 = new System.Windows.Forms.TextBox();
+            this.txtAddress3 = new System.Windows.Forms.TextBox();
             this.lblAddress4 = new System.Windows.Forms.Label();
-            this.txtAddress5 = new System.Windows.Forms.TextBox();
+            this.txtAddress4 = new System.Windows.Forms.TextBox();
             this.lblAddress5 = new System.Windows.Forms.Label();
-            this.txtAddress6 = new System.Windows.Forms.TextBox();
+            this.txtAddress5 = new System.Windows.Forms.TextBox();
             this.lblAddress6 = new System.Windows.Forms.Label();
             this.lblEmergency = new System.Windows.Forms.Label();
             this.txtEmergencyname = new System.Windows.Forms.TextBox();
@@ -348,16 +348,16 @@
             this.lblAddress2.TabIndex = 35;
             this.lblAddress2.Text = "Region";
             // 
-            // txtAddress3
+            // txtAddress2
             // 
-            this.txtAddress3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAddress3.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress3.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.txtAddress3.Location = new System.Drawing.Point(15, 377);
-            this.txtAddress3.Multiline = true;
-            this.txtAddress3.Name = "txtAddress3";
-            this.txtAddress3.Size = new System.Drawing.Size(189, 35);
-            this.txtAddress3.TabIndex = 36;
+            this.txtAddress2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAddress2.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress2.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.txtAddress2.Location = new System.Drawing.Point(15, 377);
+            this.txtAddress2.Multiline = true;
+            this.txtAddress2.Name = "txtAddress2";
+            this.txtAddress2.Size = new System.Drawing.Size(189, 35);
+            this.txtAddress2.TabIndex = 36;
             // 
             // lblAddress3
             // 
@@ -371,16 +371,16 @@
             this.lblAddress3.TabIndex = 37;
             this.lblAddress3.Text = "Province";
             // 
-            // txtAddress4
+            // txtAddress3
             // 
-            this.txtAddress4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAddress4.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress4.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.txtAddress4.Location = new System.Drawing.Point(222, 377);
-            this.txtAddress4.Multiline = true;
-            this.txtAddress4.Name = "txtAddress4";
-            this.txtAddress4.Size = new System.Drawing.Size(180, 35);
-            this.txtAddress4.TabIndex = 38;
+            this.txtAddress3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAddress3.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress3.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.txtAddress3.Location = new System.Drawing.Point(222, 377);
+            this.txtAddress3.Multiline = true;
+            this.txtAddress3.Name = "txtAddress3";
+            this.txtAddress3.Size = new System.Drawing.Size(180, 35);
+            this.txtAddress3.TabIndex = 38;
             // 
             // lblAddress4
             // 
@@ -394,16 +394,16 @@
             this.lblAddress4.TabIndex = 39;
             this.lblAddress4.Text = "City/District";
             // 
-            // txtAddress5
+            // txtAddress4
             // 
-            this.txtAddress5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAddress5.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress5.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.txtAddress5.Location = new System.Drawing.Point(419, 377);
-            this.txtAddress5.Multiline = true;
-            this.txtAddress5.Name = "txtAddress5";
-            this.txtAddress5.Size = new System.Drawing.Size(137, 35);
-            this.txtAddress5.TabIndex = 40;
+            this.txtAddress4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAddress4.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress4.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.txtAddress4.Location = new System.Drawing.Point(419, 377);
+            this.txtAddress4.Multiline = true;
+            this.txtAddress4.Name = "txtAddress4";
+            this.txtAddress4.Size = new System.Drawing.Size(137, 35);
+            this.txtAddress4.TabIndex = 40;
             // 
             // lblAddress5
             // 
@@ -417,16 +417,16 @@
             this.lblAddress5.TabIndex = 41;
             this.lblAddress5.Text = "Barangay";
             // 
-            // txtAddress6
+            // txtAddress5
             // 
-            this.txtAddress6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAddress6.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress6.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.txtAddress6.Location = new System.Drawing.Point(572, 377);
-            this.txtAddress6.Multiline = true;
-            this.txtAddress6.Name = "txtAddress6";
-            this.txtAddress6.Size = new System.Drawing.Size(100, 35);
-            this.txtAddress6.TabIndex = 42;
+            this.txtAddress5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAddress5.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress5.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.txtAddress5.Location = new System.Drawing.Point(572, 377);
+            this.txtAddress5.Multiline = true;
+            this.txtAddress5.Name = "txtAddress5";
+            this.txtAddress5.Size = new System.Drawing.Size(100, 35);
+            this.txtAddress5.TabIndex = 42;
             // 
             // lblAddress6
             // 
@@ -660,13 +660,13 @@
             this.Controls.Add(this.txtEmergencyname);
             this.Controls.Add(this.lblEmergency);
             this.Controls.Add(this.lblAddress6);
-            this.Controls.Add(this.txtAddress6);
-            this.Controls.Add(this.lblAddress5);
             this.Controls.Add(this.txtAddress5);
-            this.Controls.Add(this.lblAddress4);
+            this.Controls.Add(this.lblAddress5);
             this.Controls.Add(this.txtAddress4);
-            this.Controls.Add(this.lblAddress3);
+            this.Controls.Add(this.lblAddress4);
             this.Controls.Add(this.txtAddress3);
+            this.Controls.Add(this.lblAddress3);
+            this.Controls.Add(this.txtAddress2);
             this.Controls.Add(this.lblAddress2);
             this.Controls.Add(this.txtAddress1);
             this.Controls.Add(this.lblAddress1);
@@ -728,13 +728,13 @@
         private System.Windows.Forms.Label lblAddress1;
         private System.Windows.Forms.TextBox txtAddress1;
         private System.Windows.Forms.Label lblAddress2;
-        private System.Windows.Forms.TextBox txtAddress3;
+        private System.Windows.Forms.TextBox txtAddress2;
         private System.Windows.Forms.Label lblAddress3;
-        private System.Windows.Forms.TextBox txtAddress4;
+        private System.Windows.Forms.TextBox txtAddress3;
         private System.Windows.Forms.Label lblAddress4;
-        private System.Windows.Forms.TextBox txtAddress5;
+        private System.Windows.Forms.TextBox txtAddress4;
         private System.Windows.Forms.Label lblAddress5;
-        private System.Windows.Forms.TextBox txtAddress6;
+        private System.Windows.Forms.TextBox txtAddress5;
         private System.Windows.Forms.Label lblAddress6;
         private System.Windows.Forms.Label lblEmergency;
         private System.Windows.Forms.TextBox txtEmergencyname;
