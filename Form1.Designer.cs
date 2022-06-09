@@ -38,7 +38,7 @@
             this.txtMidname = new System.Windows.Forms.TextBox();
             this.txtLastname = new System.Windows.Forms.TextBox();
             this.lblName4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSuffix = new System.Windows.Forms.TextBox();
             this.lblAge = new System.Windows.Forms.Label();
             this.nudAge = new System.Windows.Forms.NumericUpDown();
             this.lblSex = new System.Windows.Forms.Label();
@@ -188,16 +188,16 @@
             this.lblName4.TabIndex = 21;
             this.lblName4.Text = "Suffix";
             // 
-            // textBox1
+            // txtSuffix
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.textBox1.Location = new System.Drawing.Point(605, 119);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(67, 34);
-            this.textBox1.TabIndex = 22;
+            this.txtSuffix.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSuffix.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSuffix.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.txtSuffix.Location = new System.Drawing.Point(605, 119);
+            this.txtSuffix.Multiline = true;
+            this.txtSuffix.Name = "txtSuffix";
+            this.txtSuffix.Size = new System.Drawing.Size(67, 34);
+            this.txtSuffix.TabIndex = 22;
             // 
             // lblAge
             // 
@@ -663,7 +663,7 @@
             this.Controls.Add(this.lblSex);
             this.Controls.Add(this.nudAge);
             this.Controls.Add(this.lblAge);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSuffix);
             this.Controls.Add(this.lblName4);
             this.Controls.Add(this.txtLastname);
             this.Controls.Add(this.txtMidname);
@@ -697,7 +697,7 @@
         private System.Windows.Forms.TextBox txtMidname;
         private System.Windows.Forms.TextBox txtLastname;
         private System.Windows.Forms.Label lblName4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSuffix;
         private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.NumericUpDown nudAge;
         private System.Windows.Forms.Label lblSex;
