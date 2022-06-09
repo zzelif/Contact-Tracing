@@ -25,6 +25,7 @@ namespace Contact_Tracing
             file.WriteLine("Middle Name: " + txtMidname.Text);
             file.WriteLine("Last Name: " + txtLastname.Text);
             file.WriteLine("Suffix: " + txtSuffix.Text);
+            file.WriteLine("");
             file.Close();
             MessageBox.Show("Thank you for filling up this form!");
         }

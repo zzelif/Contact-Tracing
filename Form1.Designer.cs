@@ -75,6 +75,7 @@
             this.lblYesorno1 = new System.Windows.Forms.Label();
             this.pbCtimage = new System.Windows.Forms.PictureBox();
             this.buttonSubmit = new System.Windows.Forms.Button();
+            this.dtpDate = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCtimage)).BeginInit();
             this.SuspendLayout();
@@ -537,7 +538,7 @@
             this.txtQuestion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtQuestion.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuestion.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.txtQuestion.Location = new System.Drawing.Point(801, 117);
+            this.txtQuestion.Location = new System.Drawing.Point(805, 119);
             this.txtQuestion.Multiline = true;
             this.txtQuestion.Name = "txtQuestion";
             this.txtQuestion.Size = new System.Drawing.Size(172, 34);
@@ -549,7 +550,7 @@
             this.lblYesorno.BackColor = System.Drawing.Color.Transparent;
             this.lblYesorno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYesorno.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lblYesorno.Location = new System.Drawing.Point(845, 156);
+            this.lblYesorno.Location = new System.Drawing.Point(846, 156);
             this.lblYesorno.Name = "lblYesorno";
             this.lblYesorno.Size = new System.Drawing.Size(83, 20);
             this.lblYesorno.TabIndex = 53;
@@ -561,7 +562,7 @@
             this.lblQuestion.BackColor = System.Drawing.Color.Transparent;
             this.lblQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lblQuestion.Location = new System.Drawing.Point(725, 82);
+            this.lblQuestion.Location = new System.Drawing.Point(734, 82);
             this.lblQuestion.Name = "lblQuestion";
             this.lblQuestion.Size = new System.Drawing.Size(324, 22);
             this.lblQuestion.TabIndex = 54;
@@ -572,7 +573,7 @@
             this.txtQuestion1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtQuestion1.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuestion1.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.txtQuestion1.Location = new System.Drawing.Point(801, 211);
+            this.txtQuestion1.Location = new System.Drawing.Point(805, 211);
             this.txtQuestion1.Multiline = true;
             this.txtQuestion1.Name = "txtQuestion1";
             this.txtQuestion1.Size = new System.Drawing.Size(172, 34);
@@ -584,7 +585,7 @@
             this.lblYesorno1.BackColor = System.Drawing.Color.Transparent;
             this.lblYesorno1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYesorno1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lblYesorno1.Location = new System.Drawing.Point(845, 250);
+            this.lblYesorno1.Location = new System.Drawing.Point(846, 250);
             this.lblYesorno1.Name = "lblYesorno1";
             this.lblYesorno1.Size = new System.Drawing.Size(83, 20);
             this.lblYesorno1.TabIndex = 56;
@@ -620,6 +621,21 @@
             this.buttonSubmit.UseVisualStyleBackColor = false;
             this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
+            // dtpDate
+            // 
+            this.dtpDate.CalendarFont = new System.Drawing.Font("Imprint MT Shadow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDate.CalendarForeColor = System.Drawing.Color.Transparent;
+            this.dtpDate.CalendarMonthBackground = System.Drawing.Color.Transparent;
+            this.dtpDate.CalendarTitleBackColor = System.Drawing.Color.Transparent;
+            this.dtpDate.CalendarTitleForeColor = System.Drawing.Color.Transparent;
+            this.dtpDate.CalendarTrailingForeColor = System.Drawing.Color.Transparent;
+            this.dtpDate.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDate.Location = new System.Drawing.Point(740, 12);
+            this.dtpDate.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.dtpDate.Name = "dtpDate";
+            this.dtpDate.Size = new System.Drawing.Size(345, 31);
+            this.dtpDate.TabIndex = 59;
+            // 
             // formcttracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -627,6 +643,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1121, 603);
+            this.Controls.Add(this.dtpDate);
             this.Controls.Add(this.buttonSubmit);
             this.Controls.Add(this.pbCtimage);
             this.Controls.Add(this.lblYesorno1);
@@ -734,6 +751,7 @@
         private System.Windows.Forms.Label lblYesorno1;
         private System.Windows.Forms.PictureBox pbCtimage;
         private System.Windows.Forms.Button buttonSubmit;
+        private System.Windows.Forms.DateTimePicker dtpDate;
     }
 }
 
