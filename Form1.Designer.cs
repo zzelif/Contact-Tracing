@@ -592,16 +592,14 @@
             // 
             // pbCtimage
             // 
-            this.pbCtimage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbCtimage.BackColor = System.Drawing.Color.Transparent;
             this.pbCtimage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbCtimage.BackgroundImage")));
+            this.pbCtimage.Enabled = false;
             this.pbCtimage.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbCtimage.ErrorImage")));
             this.pbCtimage.Image = ((System.Drawing.Image)(resources.GetObject("pbCtimage.Image")));
             this.pbCtimage.Location = new System.Drawing.Point(751, 277);
             this.pbCtimage.Name = "pbCtimage";
-            this.pbCtimage.Size = new System.Drawing.Size(283, 218);
+            this.pbCtimage.Size = new System.Drawing.Size(298, 228);
             this.pbCtimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCtimage.TabIndex = 57;
             this.pbCtimage.TabStop = false;
@@ -614,7 +612,7 @@
             this.buttonSubmit.ForeColor = System.Drawing.Color.Cornsilk;
             this.buttonSubmit.Image = ((System.Drawing.Image)(resources.GetObject("buttonSubmit.Image")));
             this.buttonSubmit.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.buttonSubmit.Location = new System.Drawing.Point(820, 511);
+            this.buttonSubmit.Location = new System.Drawing.Point(824, 515);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(152, 44);
             this.buttonSubmit.TabIndex = 58;
@@ -625,8 +623,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1073, 573);
+            this.ClientSize = new System.Drawing.Size(1121, 603);
             this.Controls.Add(this.buttonSubmit);
             this.Controls.Add(this.pbCtimage);
             this.Controls.Add(this.lblYesorno1);
@@ -674,7 +673,10 @@
             this.Controls.Add(this.lblName1);
             this.Controls.Add(this.lblDisplayname);
             this.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.MaximizeBox = false;
             this.Name = "formcttracing";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing";
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCtimage)).EndInit();
