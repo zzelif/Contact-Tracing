@@ -20,8 +20,7 @@ namespace Contact_Tracing
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing" + txtLastname +
-                ".txt", true);
+            StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\" + txtLastname.Text + ".txt", true);
             file.WriteLine("Date: " + dtpDate.Text);
             file.WriteLine("");
             file.WriteLine("PERSONAL INFORMATION");
