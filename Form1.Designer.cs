@@ -630,7 +630,7 @@
             this.dtpDate.CalendarTitleForeColor = System.Drawing.Color.Transparent;
             this.dtpDate.CalendarTrailingForeColor = System.Drawing.Color.Transparent;
             this.dtpDate.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpDate.Location = new System.Drawing.Point(740, 12);
+            this.dtpDate.Location = new System.Drawing.Point(725, 21);
             this.dtpDate.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(345, 31);
