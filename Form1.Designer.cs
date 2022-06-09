@@ -41,8 +41,8 @@
             this.txtSuffix = new System.Windows.Forms.TextBox();
             this.lblAge = new System.Windows.Forms.Label();
             this.nudAge = new System.Windows.Forms.NumericUpDown();
-            this.lblSex = new System.Windows.Forms.Label();
-            this.txtSex = new System.Windows.Forms.TextBox();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.txtGender = new System.Windows.Forms.TextBox();
             this.lblNumber = new System.Windows.Forms.Label();
             this.txtNumber = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -221,28 +221,28 @@
             this.nudAge.Size = new System.Drawing.Size(70, 35);
             this.nudAge.TabIndex = 24;
             // 
-            // lblSex
+            // lblGender
             // 
-            this.lblSex.AutoSize = true;
-            this.lblSex.BackColor = System.Drawing.Color.Transparent;
-            this.lblSex.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSex.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lblSex.Location = new System.Drawing.Point(142, 181);
-            this.lblSex.Name = "lblSex";
-            this.lblSex.Size = new System.Drawing.Size(62, 33);
-            this.lblSex.TabIndex = 25;
-            this.lblSex.Text = "Sex";
+            this.lblGender.AutoSize = true;
+            this.lblGender.BackColor = System.Drawing.Color.Transparent;
+            this.lblGender.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGender.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lblGender.Location = new System.Drawing.Point(111, 181);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(111, 33);
+            this.lblGender.TabIndex = 25;
+            this.lblGender.Text = "Gender";
             // 
-            // txtSex
+            // txtGender
             // 
-            this.txtSex.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSex.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSex.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.txtSex.Location = new System.Drawing.Point(102, 216);
-            this.txtSex.Multiline = true;
-            this.txtSex.Name = "txtSex";
-            this.txtSex.Size = new System.Drawing.Size(125, 35);
-            this.txtSex.TabIndex = 26;
+            this.txtGender.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtGender.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGender.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.txtGender.Location = new System.Drawing.Point(102, 216);
+            this.txtGender.Multiline = true;
+            this.txtGender.Name = "txtGender";
+            this.txtGender.Size = new System.Drawing.Size(125, 35);
+            this.txtGender.TabIndex = 26;
             // 
             // lblNumber
             // 
@@ -676,8 +676,8 @@
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txtNumber);
             this.Controls.Add(this.lblNumber);
-            this.Controls.Add(this.txtSex);
-            this.Controls.Add(this.lblSex);
+            this.Controls.Add(this.txtGender);
+            this.Controls.Add(this.lblGender);
             this.Controls.Add(this.nudAge);
             this.Controls.Add(this.lblAge);
             this.Controls.Add(this.txtSuffix);
@@ -717,8 +717,8 @@
         private System.Windows.Forms.TextBox txtSuffix;
         private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.NumericUpDown nudAge;
-        private System.Windows.Forms.Label lblSex;
-        private System.Windows.Forms.TextBox txtSex;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.TextBox txtGender;
         private System.Windows.Forms.Label lblNumber;
         private System.Windows.Forms.TextBox txtNumber;
         private System.Windows.Forms.Label lblEmail;

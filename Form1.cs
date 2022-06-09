@@ -27,7 +27,7 @@ namespace Contact_Tracing
             file.WriteLine("Last Name: " + txtLastname.Text);
             file.WriteLine("Suffix: " + txtSuffix.Text);
             file.WriteLine("Age: " + nudAge.Text);
-            file.WriteLine("Sex: " + txtSex.Text);
+            file.WriteLine("Sex: " + txtGender.Text);
             file.Close();
             MessageBox.Show("Thank you for filling up this form!");
         }
