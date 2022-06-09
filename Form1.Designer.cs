@@ -73,7 +73,10 @@
             this.lblQuestion = new System.Windows.Forms.Label();
             this.txtQuestion1 = new System.Windows.Forms.TextBox();
             this.lblYesorno1 = new System.Windows.Forms.Label();
+            this.pbCtimage = new System.Windows.Forms.PictureBox();
+            this.buttonSubmit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCtimage)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDisplayname
@@ -523,7 +526,7 @@
             this.lblQuestion1.BackColor = System.Drawing.Color.Transparent;
             this.lblQuestion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lblQuestion1.Location = new System.Drawing.Point(721, 188);
+            this.lblQuestion1.Location = new System.Drawing.Point(721, 180);
             this.lblQuestion1.Name = "lblQuestion1";
             this.lblQuestion1.Size = new System.Drawing.Size(340, 22);
             this.lblQuestion1.TabIndex = 51;
@@ -534,7 +537,7 @@
             this.txtQuestion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtQuestion.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuestion.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.txtQuestion.Location = new System.Drawing.Point(801, 119);
+            this.txtQuestion.Location = new System.Drawing.Point(801, 117);
             this.txtQuestion.Multiline = true;
             this.txtQuestion.Name = "txtQuestion";
             this.txtQuestion.Size = new System.Drawing.Size(172, 34);
@@ -546,7 +549,7 @@
             this.lblYesorno.BackColor = System.Drawing.Color.Transparent;
             this.lblYesorno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYesorno.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lblYesorno.Location = new System.Drawing.Point(845, 157);
+            this.lblYesorno.Location = new System.Drawing.Point(845, 156);
             this.lblYesorno.Name = "lblYesorno";
             this.lblYesorno.Size = new System.Drawing.Size(83, 20);
             this.lblYesorno.TabIndex = 53;
@@ -569,7 +572,7 @@
             this.txtQuestion1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtQuestion1.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuestion1.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.txtQuestion1.Location = new System.Drawing.Point(801, 216);
+            this.txtQuestion1.Location = new System.Drawing.Point(801, 211);
             this.txtQuestion1.Multiline = true;
             this.txtQuestion1.Name = "txtQuestion1";
             this.txtQuestion1.Size = new System.Drawing.Size(172, 34);
@@ -581,11 +584,42 @@
             this.lblYesorno1.BackColor = System.Drawing.Color.Transparent;
             this.lblYesorno1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYesorno1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lblYesorno1.Location = new System.Drawing.Point(845, 254);
+            this.lblYesorno1.Location = new System.Drawing.Point(845, 250);
             this.lblYesorno1.Name = "lblYesorno1";
             this.lblYesorno1.Size = new System.Drawing.Size(83, 20);
             this.lblYesorno1.TabIndex = 56;
             this.lblYesorno1.Text = "Yes or No";
+            // 
+            // pbCtimage
+            // 
+            this.pbCtimage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbCtimage.BackColor = System.Drawing.Color.Transparent;
+            this.pbCtimage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbCtimage.BackgroundImage")));
+            this.pbCtimage.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbCtimage.ErrorImage")));
+            this.pbCtimage.Image = ((System.Drawing.Image)(resources.GetObject("pbCtimage.Image")));
+            this.pbCtimage.Location = new System.Drawing.Point(751, 277);
+            this.pbCtimage.Name = "pbCtimage";
+            this.pbCtimage.Size = new System.Drawing.Size(283, 218);
+            this.pbCtimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCtimage.TabIndex = 57;
+            this.pbCtimage.TabStop = false;
+            // 
+            // buttonSubmit
+            // 
+            this.buttonSubmit.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSubmit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSubmit.BackgroundImage")));
+            this.buttonSubmit.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSubmit.ForeColor = System.Drawing.Color.Cornsilk;
+            this.buttonSubmit.Image = ((System.Drawing.Image)(resources.GetObject("buttonSubmit.Image")));
+            this.buttonSubmit.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.buttonSubmit.Location = new System.Drawing.Point(820, 511);
+            this.buttonSubmit.Name = "buttonSubmit";
+            this.buttonSubmit.Size = new System.Drawing.Size(152, 44);
+            this.buttonSubmit.TabIndex = 58;
+            this.buttonSubmit.Text = "Submit";
+            this.buttonSubmit.UseVisualStyleBackColor = false;
             // 
             // formcttracing
             // 
@@ -593,6 +627,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1073, 573);
+            this.Controls.Add(this.buttonSubmit);
+            this.Controls.Add(this.pbCtimage);
             this.Controls.Add(this.lblYesorno1);
             this.Controls.Add(this.txtQuestion1);
             this.Controls.Add(this.lblQuestion);
@@ -641,6 +677,7 @@
             this.Name = "formcttracing";
             this.Text = "Contact Tracing";
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCtimage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -692,6 +729,8 @@
         private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.TextBox txtQuestion1;
         private System.Windows.Forms.Label lblYesorno1;
+        private System.Windows.Forms.PictureBox pbCtimage;
+        private System.Windows.Forms.Button buttonSubmit;
     }
 }
 
