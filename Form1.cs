@@ -17,5 +17,13 @@ namespace Contact_Tracing
         {
             InitializeComponent();
         }
+
+        private void buttonSubmit_Click(object sender, EventArgs e)
+        {
+            StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing.txt", true);
+            file.WriteLine("First Name: " + txtFirstname.Text);
+            file.Close();
+            MessageBox.Show("Thank you for filling up this form!");
+        }
     }
 }
