@@ -47,8 +47,8 @@ namespace Contact_Tracing
                 foreach (string contents in dates)
                 {
                     file.WriteLine(contents);
-                    file.Close();
                 }
+                file.Close();
                 MessageBox.Show("Found " + dateResults + " records on the selected date");
                 MessageBox.Show("These will be saved and can be viewed at Contact Tracing folder");
                 Form4 date = new Form4();
