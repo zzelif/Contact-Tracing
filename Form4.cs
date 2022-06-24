@@ -16,7 +16,7 @@ namespace Contact_Tracing
         public Form4()
         {
             InitializeComponent();
-            var dateFiles = Directory.EnumerateFiles(@"C: \Users\Public\Documents\Contact Tracing\Date");
+            var dateFiles = Directory.EnumerateFiles(@"C:\Users\Public\Documents\Contact Tracing\Date");
             foreach (string file in dateFiles)
             {
                 string dates = File.ReadAllText(file);
