@@ -23,6 +23,7 @@ namespace Contact_Tracing
             StreamReader reader = new StreamReader(@"C:\Users\Public\Documents\Contact Tracing\Lettac.txt");
             string all = reader.ReadToEnd();
             MessageBox.Show(all);
+            //Gonna change this into loading a new form
         }
     }
 }
