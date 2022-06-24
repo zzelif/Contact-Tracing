@@ -50,25 +50,8 @@ namespace Contact_Tracing
             file.WriteLine(txtQuestion1.Text);
             file.Close();
             MessageBox.Show("Thank you for filling up this form!", "Contact Tracing", MessageBoxButtons.OK);
-            txtFirstname.Text = "";
-            txtMidname.Text = "";
-            txtLastname.Text = "";
-            txtSuffix.Text = "";
-            nudAge.Text = "";
-            txtGender.Text = "";
-            txtNumber.Text = "";
-            txtEmail.Text = "";
-            txtAddress.Text = "";
-            txtAddress1.Text = "";
-            txtAddress2.Text = "";
-            txtAddress3.Text = "";
-            txtAddress4.Text = "";
-            txtAddress5.Text = "";
-            txtEmergencyname.Text = "";
-            txtRelationship.Text = "";
-            txtContactno.Text = "";
-            txtQuestion.Text = "";
-            txtQuestion1.Text = "";
+            Application.Restart();
+            Environment.Exit(0);
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)

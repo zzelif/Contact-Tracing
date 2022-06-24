@@ -16,11 +16,11 @@ namespace Contact_Tracing
         public Form3()
         {
             InitializeComponent();
-            var txtFiles = Directory.EnumerateFiles(@"C:\Users\Public\Documents\Contact Tracing", ".txt");
-            foreach (var currentFile in txtFiles)
+            var txtFiles = Directory.GetFiles(@"C:\Users\Public\Documents\Contact Tracing");
+            foreach (string file in txtFiles)
             {
-                var data = File.ReadAllText(currentFile);
-                lblAll.Text = lblAll.Text + data + "\n";
+                string contents = File.ReadAllText(file);
+                lblAll.Text += contents;
             }
         }
 
