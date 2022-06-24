@@ -33,11 +33,10 @@
             // 
             // lblAll
             // 
-            this.lblAll.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAll.AutoEllipsis = true;
             this.lblAll.AutoSize = true;
-            this.lblAll.Location = new System.Drawing.Point(23, 46);
+            this.lblAll.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblAll.Location = new System.Drawing.Point(0, 0);
             this.lblAll.Name = "lblAll";
             this.lblAll.Size = new System.Drawing.Size(0, 16);
             this.lblAll.TabIndex = 0;
