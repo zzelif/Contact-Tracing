@@ -42,9 +42,9 @@
             this.btnShowall.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnShowall.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowall.ForeColor = System.Drawing.Color.Cornsilk;
-            this.btnShowall.Location = new System.Drawing.Point(104, 184);
+            this.btnShowall.Location = new System.Drawing.Point(97, 184);
             this.btnShowall.Name = "btnShowall";
-            this.btnShowall.Size = new System.Drawing.Size(130, 63);
+            this.btnShowall.Size = new System.Drawing.Size(145, 63);
             this.btnShowall.TabIndex = 1;
             this.btnShowall.Text = "Continue";
             this.btnShowall.UseVisualStyleBackColor = false;
@@ -98,9 +98,9 @@
             this.btnFilterdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnFilterdate.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFilterdate.ForeColor = System.Drawing.Color.Cornsilk;
-            this.btnFilterdate.Location = new System.Drawing.Point(748, 187);
+            this.btnFilterdate.Location = new System.Drawing.Point(740, 187);
             this.btnFilterdate.Name = "btnFilterdate";
-            this.btnFilterdate.Size = new System.Drawing.Size(130, 63);
+            this.btnFilterdate.Size = new System.Drawing.Size(141, 63);
             this.btnFilterdate.TabIndex = 11;
             this.btnFilterdate.Text = "Continue";
             this.btnFilterdate.UseVisualStyleBackColor = false;

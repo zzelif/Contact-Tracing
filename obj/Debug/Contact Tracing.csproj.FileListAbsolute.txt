@@ -11,3 +11,4 @@ C:\Users\ASUS\source\repos\Contact Tracing\obj\Debug\Contact Tracing.exe
 C:\Users\ASUS\source\repos\Contact Tracing\obj\Debug\Contact Tracing.pdb
 C:\Users\ASUS\source\repos\Contact Tracing\obj\Debug\Contact_Tracing.Form2.resources
 C:\Users\ASUS\source\repos\Contact Tracing\obj\Debug\Contact_Tracing.Form3.resources
+C:\Users\ASUS\source\repos\Contact Tracing\obj\Debug\Contact_Tracing.Form4.resources

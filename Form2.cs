@@ -27,14 +27,14 @@ namespace Contact_Tracing
 
         private void btnFilterdate_Click(object sender, EventArgs e)
         {
-            var txtFiles = Directory.GetFiles(@"C:\Users\Public\Documents\Contact Tracing");
+            StreamReader reader = new StreamReader(@"C:\Users\Public\Documents\Contact Tracing\");
             List<string> dates = new List<string>();
             string Date = dtpFilter.Value.ToShortDateString();
             int dateResults = 0;
 
-            foreach (string file in txtFiles)
+            while (!reader.EndOfStream)
             {
-                string inputdate = File.ReadAllText(file);
+                string inputdate = reader.ReadLine();
                 if (inputdate.Contains(Date))
                 {
                     dateResults++;
@@ -44,17 +44,18 @@ namespace Contact_Tracing
             if (dateResults == 0)
             {
                 MessageBox.Show("No records found on the selected date");
-                return;
+                reader.Close();
             }
             else
             {
-                StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing Date.txt");
+                reader.Close();
+                StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\" + dtpFilter.Text + ".txt");
                 foreach (string inputdate in dates)
                 {
                     file.WriteLine(inputdate);
                 }
                 MessageBox.Show("Found " + dateResults.ToString() + " records on the selected date");
-                MessageBox.Show("These can be viewed at Contact Tracing Date.txt");
+                MessageBox.Show("These will be saved at cam be viewed at Contact Tracing/" + dtpFilter.Text + ".txt");
                 file.Close();
                 Form4 date = new Form4();
                 date.ShowDialog();

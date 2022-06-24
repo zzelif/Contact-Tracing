@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lblDateresults = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // lblDateresults
+            // 
+            this.lblDateresults.AutoSize = true;
+            this.lblDateresults.Location = new System.Drawing.Point(22, 42);
+            this.lblDateresults.Name = "lblDateresults";
+            this.lblDateresults.Size = new System.Drawing.Size(0, 16);
+            this.lblDateresults.TabIndex = 0;
+            // 
+            // Form4
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblDateresults);
+            this.Name = "Form4";
             this.Text = "Form4";
+            this.Load += new System.EventHandler(this.Form4_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblDateresults;
     }
 }
