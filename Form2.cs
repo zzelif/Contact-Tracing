@@ -27,7 +27,7 @@ namespace Contact_Tracing
 
         private void btnFilterdate_Click(object sender, EventArgs e)
         {
-            List<string> dates = new List<string>();
+            var dates = new List<string>();
             string Date = dtpFilter.Text;
             int dateResults = 0;
             var txtFiles = Directory.EnumerateFiles(@"C:\Users\Public\Documents\Contact Tracing");
@@ -35,7 +35,13 @@ namespace Contact_Tracing
             {
                 string contents = File.ReadAllText(file);
                 if (contents.Contains(Date))
-                    dateResults++; dates.Add(contents); continue;
+                {
+                    var date = contents.Substring(contents.IndexOf("=") + 1);
+                    dateResults++;
+                    dates.Add(contents);
+                    continue;
+                }
+
             }
             if (dateResults == 0)
             {
@@ -43,7 +49,7 @@ namespace Contact_Tracing
             }
             else
             {
-                StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\Date" + dtpFilter.Text + ".txt");
+                StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\Date\" + dtpFilter.Text + ".txt");
                 foreach (string contents in dates)
                 {
                     file.WriteLine(contents);
