@@ -20,10 +20,9 @@ namespace Contact_Tracing
 
         private void btnShowall_Click(object sender, EventArgs e)
         {
-            StreamReader reader = new StreamReader(@"C:\Users\Public\Documents\Contact Tracing\Lettac.txt");
-            string all = reader.ReadToEnd();
-            MessageBox.Show(all);
-            //Gonna change this into loading a new form
+            Form3 all = new Form3();
+            all.ShowDialog();
+
         }
     }
 }

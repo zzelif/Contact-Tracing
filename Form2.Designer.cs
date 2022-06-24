@@ -60,7 +60,7 @@
             this.Controls.Add(this.lblShowalldata);
             this.Controls.Add(this.btnShowall);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Administrator";
             this.ResumeLayout(false);
 
         }
