@@ -28,26 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.lblAll = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblAll
             // 
-            this.lblAll.AutoEllipsis = true;
             this.lblAll.AutoSize = true;
-            this.lblAll.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblAll.Location = new System.Drawing.Point(0, 0);
+            this.lblAll.BackColor = System.Drawing.Color.Transparent;
+            this.lblAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAll.ForeColor = System.Drawing.Color.Goldenrod;
+            this.lblAll.Location = new System.Drawing.Point(23, 46);
             this.lblAll.Name = "lblAll";
-            this.lblAll.Size = new System.Drawing.Size(0, 16);
+            this.lblAll.Size = new System.Drawing.Size(0, 25);
             this.lblAll.TabIndex = 0;
             this.lblAll.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form3
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(874, 604);
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.Cornsilk;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(570, 621);
             this.Controls.Add(this.lblAll);
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
