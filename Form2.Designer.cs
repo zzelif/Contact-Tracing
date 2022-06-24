@@ -104,6 +104,7 @@
             this.btnFilterdate.TabIndex = 11;
             this.btnFilterdate.Text = "Continue";
             this.btnFilterdate.UseVisualStyleBackColor = false;
+            this.btnFilterdate.Click += new System.EventHandler(this.btnFilterdate_Click);
             // 
             // Form2
             // 
