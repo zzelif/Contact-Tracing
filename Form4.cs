@@ -16,7 +16,12 @@ namespace Contact_Tracing
         public Form4()
         {
             InitializeComponent();
-            StreamReader reader = new StreamReader(@"C:\Users\Public\Documents\Contact Tracing Date.txt");
+            var txtFiles = Directory.GetFiles(@"C:\Users\Public\Documents\Contact Tracing\Date");
+            foreach (string file in txtFiles)
+            {
+                string contents = File.ReadAllText(file);
+                lblDateresults.Text += contents + "\n";
+            }
         }
 
         private void Form4_Load(object sender, EventArgs e)

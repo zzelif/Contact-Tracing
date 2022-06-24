@@ -43,7 +43,7 @@ namespace Contact_Tracing
             }
             else
             {
-                StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\" + dtpFilter.Text + ".txt");
+                StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\Date" + dtpFilter.Text + ".txt");
                 foreach (string contents in dates)
                 {
                     file.WriteLine(contents);
