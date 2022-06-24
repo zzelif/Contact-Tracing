@@ -9,3 +9,4 @@ C:\Users\ASUS\source\repos\Contact Tracing\obj\Debug\Contact Tracing.csproj.Gene
 C:\Users\ASUS\source\repos\Contact Tracing\obj\Debug\Contact Tracing.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\source\repos\Contact Tracing\obj\Debug\Contact Tracing.exe
 C:\Users\ASUS\source\repos\Contact Tracing\obj\Debug\Contact Tracing.pdb
+C:\Users\ASUS\source\repos\Contact Tracing\obj\Debug\Contact_Tracing.Form2.resources

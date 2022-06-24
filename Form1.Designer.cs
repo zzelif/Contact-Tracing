@@ -76,6 +76,9 @@
             this.pbCtimage = new System.Windows.Forms.PictureBox();
             this.buttonSubmit = new System.Windows.Forms.Button();
             this.dtpDate = new System.Windows.Forms.DateTimePicker();
+            this.btnAdmin = new System.Windows.Forms.Button();
+            this.txtbxPassword = new System.Windows.Forms.TextBox();
+            this.lblAdmin = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCtimage)).BeginInit();
             this.SuspendLayout();
@@ -636,13 +639,45 @@
             this.dtpDate.Size = new System.Drawing.Size(345, 31);
             this.dtpDate.TabIndex = 59;
             // 
+            // btnAdmin
+            // 
+            this.btnAdmin.Location = new System.Drawing.Point(202, 609);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(108, 24);
+            this.btnAdmin.TabIndex = 60;
+            this.btnAdmin.Text = "Admin Submit";
+            this.btnAdmin.UseVisualStyleBackColor = true;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
+            // 
+            // txtbxPassword
+            // 
+            this.txtbxPassword.Location = new System.Drawing.Point(15, 609);
+            this.txtbxPassword.Name = "txtbxPassword";
+            this.txtbxPassword.Size = new System.Drawing.Size(158, 22);
+            this.txtbxPassword.TabIndex = 61;
+            // 
+            // lblAdmin
+            // 
+            this.lblAdmin.AutoSize = true;
+            this.lblAdmin.BackColor = System.Drawing.Color.Transparent;
+            this.lblAdmin.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdmin.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lblAdmin.Location = new System.Drawing.Point(9, 573);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(177, 33);
+            this.lblAdmin.TabIndex = 62;
+            this.lblAdmin.Text = "Admin Only";
+            // 
             // formcttracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1121, 603);
+            this.ClientSize = new System.Drawing.Size(1121, 643);
+            this.Controls.Add(this.lblAdmin);
+            this.Controls.Add(this.txtbxPassword);
+            this.Controls.Add(this.btnAdmin);
             this.Controls.Add(this.dtpDate);
             this.Controls.Add(this.buttonSubmit);
             this.Controls.Add(this.pbCtimage);
@@ -752,6 +787,9 @@
         private System.Windows.Forms.PictureBox pbCtimage;
         private System.Windows.Forms.Button buttonSubmit;
         private System.Windows.Forms.DateTimePicker dtpDate;
+        private System.Windows.Forms.Button btnAdmin;
+        private System.Windows.Forms.TextBox txtbxPassword;
+        private System.Windows.Forms.Label lblAdmin;
     }
 }
 

@@ -70,5 +70,19 @@ namespace Contact_Tracing
             txtQuestion.Text = "";
             txtQuestion1.Text = "";
         }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            String pws = txtbxPassword.Text;
+            if (pws == "admin")
+            {
+                Form2 info = new Form2();
+                info.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Wrong Password");
+            }
+        }
     }
 }
