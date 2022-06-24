@@ -16,13 +16,12 @@ namespace Contact_Tracing
         public Form3()
         {
             InitializeComponent();
-            StreamReader reader = new StreamReader(@"C:\Users\Public\Documents\Contact Tracing\Lettac.txt");
-            while (!reader.EndOfStream )
+            var txtFiles = Directory.EnumerateFiles(@"C:\Users\Public\Documents\Contact Tracing", ".txt");
+            foreach (var currentFile in txtFiles)
             {
-                string data = reader.ReadLine();
+                var data = File.ReadAllText(currentFile);
                 lblAll.Text = lblAll.Text + data + "\n";
             }
-            reader.Close();
         }
 
         private void Form3_Load(object sender, EventArgs e)
