@@ -61,35 +61,11 @@ namespace Contact_Tracing
                 Form4 date = new Form4();
                 date.ShowDialog();
             }
+        }
 
-            //while (!reader.EndOfStream)
-            //{
-            //    string inputdate = reader.ReadLine();
-            //    if (inputdate.Contains(Date))
-            //    {
-            //        dateResults++;
-            //        dates.Add(inputdate);
-            //    }
-            //}
-            //if (dateResults == 0)
-            //{
-            //    MessageBox.Show("No records found on the selected date");
-            //    reader.Close();
-            //}
-            //else
-            //{
-            //    reader.Close();
-            //    StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\" + dtpFilter.Text + ".txt");
-            //    foreach (string inputdate in dates)
-            //    {
-            //        file.WriteLine(inputdate);
-            //    }
-            //    MessageBox.Show("Found " + dateResults.ToString() + " records on the selected date");
-            //    MessageBox.Show("These will be saved at cam be viewed at Contact Tracing/" + dtpFilter.Text + ".txt");
-            //    file.Close();
-            //    Form4 date = new Form4();
-            //    date.ShowDialog();
-            //}
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            txtbxAdvancedsearch.Text = "Yes...";
         }
     }
 }

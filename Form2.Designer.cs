@@ -28,11 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.btnShowall = new System.Windows.Forms.Button();
             this.lblShowalldata = new System.Windows.Forms.Label();
             this.lblFilterdate = new System.Windows.Forms.Label();
             this.dtpFilter = new System.Windows.Forms.DateTimePicker();
             this.btnFilterdate = new System.Windows.Forms.Button();
+            this.lblAdvancedsearch = new System.Windows.Forms.Label();
+            this.lblsearchinfo = new System.Windows.Forms.Label();
+            this.txtbxAdvancedsearch = new System.Windows.Forms.TextBox();
+            this.lblDirection = new System.Windows.Forms.Label();
+            this.lblDatedirections = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnShowall
@@ -42,7 +48,7 @@
             this.btnShowall.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnShowall.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowall.ForeColor = System.Drawing.Color.Cornsilk;
-            this.btnShowall.Location = new System.Drawing.Point(97, 184);
+            this.btnShowall.Location = new System.Drawing.Point(73, 184);
             this.btnShowall.Name = "btnShowall";
             this.btnShowall.Size = new System.Drawing.Size(145, 63);
             this.btnShowall.TabIndex = 1;
@@ -57,7 +63,7 @@
             this.lblShowalldata.ForeColor = System.Drawing.Color.Cornsilk;
             this.lblShowalldata.Image = global::Contact_Tracing.Properties.Resources._9523126451_674b6874d7_b;
             this.lblShowalldata.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.lblShowalldata.Location = new System.Drawing.Point(67, 34);
+            this.lblShowalldata.Location = new System.Drawing.Point(41, 34);
             this.lblShowalldata.Name = "lblShowalldata";
             this.lblShowalldata.Size = new System.Drawing.Size(204, 147);
             this.lblShowalldata.TabIndex = 8;
@@ -71,7 +77,7 @@
             this.lblFilterdate.ForeColor = System.Drawing.Color.Cornsilk;
             this.lblFilterdate.Image = global::Contact_Tracing.Properties.Resources._9523126451_674b6874d7_b;
             this.lblFilterdate.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lblFilterdate.Location = new System.Drawing.Point(708, 34);
+            this.lblFilterdate.Location = new System.Drawing.Point(468, 34);
             this.lblFilterdate.Name = "lblFilterdate";
             this.lblFilterdate.Size = new System.Drawing.Size(204, 78);
             this.lblFilterdate.TabIndex = 9;
@@ -86,7 +92,7 @@
             this.dtpFilter.CalendarTitleForeColor = System.Drawing.Color.Transparent;
             this.dtpFilter.CalendarTrailingForeColor = System.Drawing.Color.Transparent;
             this.dtpFilter.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFilter.Location = new System.Drawing.Point(639, 152);
+            this.dtpFilter.Location = new System.Drawing.Point(412, 149);
             this.dtpFilter.Name = "dtpFilter";
             this.dtpFilter.Size = new System.Drawing.Size(343, 29);
             this.dtpFilter.TabIndex = 10;
@@ -98,7 +104,7 @@
             this.btnFilterdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnFilterdate.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFilterdate.ForeColor = System.Drawing.Color.Cornsilk;
-            this.btnFilterdate.Location = new System.Drawing.Point(740, 187);
+            this.btnFilterdate.Location = new System.Drawing.Point(504, 184);
             this.btnFilterdate.Name = "btnFilterdate";
             this.btnFilterdate.Size = new System.Drawing.Size(141, 63);
             this.btnFilterdate.TabIndex = 11;
@@ -106,13 +112,82 @@
             this.btnFilterdate.UseVisualStyleBackColor = false;
             this.btnFilterdate.Click += new System.EventHandler(this.btnFilterdate_Click);
             // 
+            // lblAdvancedsearch
+            // 
+            this.lblAdvancedsearch.BackColor = System.Drawing.Color.Transparent;
+            this.lblAdvancedsearch.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdvancedsearch.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lblAdvancedsearch.Image = ((System.Drawing.Image)(resources.GetObject("lblAdvancedsearch.Image")));
+            this.lblAdvancedsearch.Location = new System.Drawing.Point(301, 287);
+            this.lblAdvancedsearch.Name = "lblAdvancedsearch";
+            this.lblAdvancedsearch.Size = new System.Drawing.Size(166, 78);
+            this.lblAdvancedsearch.TabIndex = 12;
+            this.lblAdvancedsearch.Text = "Advanced Search";
+            this.lblAdvancedsearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblsearchinfo
+            // 
+            this.lblsearchinfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblsearchinfo.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsearchinfo.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lblsearchinfo.Image = ((System.Drawing.Image)(resources.GetObject("lblsearchinfo.Image")));
+            this.lblsearchinfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblsearchinfo.Location = new System.Drawing.Point(42, 371);
+            this.lblsearchinfo.Name = "lblsearchinfo";
+            this.lblsearchinfo.Size = new System.Drawing.Size(220, 32);
+            this.lblsearchinfo.TabIndex = 13;
+            this.lblsearchinfo.Text = "Find record(s) with...";
+            this.lblsearchinfo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtbxAdvancedsearch
+            // 
+            this.txtbxAdvancedsearch.BackColor = System.Drawing.Color.White;
+            this.txtbxAdvancedsearch.Location = new System.Drawing.Point(268, 417);
+            this.txtbxAdvancedsearch.Multiline = true;
+            this.txtbxAdvancedsearch.Name = "txtbxAdvancedsearch";
+            this.txtbxAdvancedsearch.Size = new System.Drawing.Size(243, 32);
+            this.txtbxAdvancedsearch.TabIndex = 14;
+            // 
+            // lblDirection
+            // 
+            this.lblDirection.BackColor = System.Drawing.Color.Transparent;
+            this.lblDirection.Font = new System.Drawing.Font("Berlin Sans FB", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDirection.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lblDirection.Image = ((System.Drawing.Image)(resources.GetObject("lblDirection.Image")));
+            this.lblDirection.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDirection.Location = new System.Drawing.Point(43, 417);
+            this.lblDirection.Name = "lblDirection";
+            this.lblDirection.Size = new System.Drawing.Size(219, 32);
+            this.lblDirection.TabIndex = 15;
+            this.lblDirection.Text = "Contact/Symptoms - Yes:";
+            this.lblDirection.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblDatedirections
+            // 
+            this.lblDatedirections.BackColor = System.Drawing.Color.Transparent;
+            this.lblDatedirections.Font = new System.Drawing.Font("Berlin Sans FB", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatedirections.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lblDatedirections.Image = ((System.Drawing.Image)(resources.GetObject("lblDatedirections.Image")));
+            this.lblDatedirections.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblDatedirections.Location = new System.Drawing.Point(43, 471);
+            this.lblDatedirections.Name = "lblDatedirections";
+            this.lblDatedirections.Size = new System.Drawing.Size(219, 32);
+            this.lblDatedirections.TabIndex = 16;
+            this.lblDatedirections.Text = "Date of Record(s)...";
+            this.lblDatedirections.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.BackgroundImage = global::Contact_Tracing.Properties.Resources._9523126451_674b6874d7_b;
-            this.ClientSize = new System.Drawing.Size(1058, 606);
+            this.ClientSize = new System.Drawing.Size(828, 606);
+            this.Controls.Add(this.lblDatedirections);
+            this.Controls.Add(this.lblDirection);
+            this.Controls.Add(this.txtbxAdvancedsearch);
+            this.Controls.Add(this.lblsearchinfo);
+            this.Controls.Add(this.lblAdvancedsearch);
             this.Controls.Add(this.btnFilterdate);
             this.Controls.Add(this.dtpFilter);
             this.Controls.Add(this.lblFilterdate);
@@ -121,7 +196,9 @@
             this.MaximizeBox = false;
             this.Name = "Form2";
             this.Text = "Administrator";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -132,5 +209,10 @@
         private System.Windows.Forms.Label lblFilterdate;
         private System.Windows.Forms.DateTimePicker dtpFilter;
         private System.Windows.Forms.Button btnFilterdate;
+        private System.Windows.Forms.Label lblAdvancedsearch;
+        private System.Windows.Forms.Label lblsearchinfo;
+        private System.Windows.Forms.TextBox txtbxAdvancedsearch;
+        private System.Windows.Forms.Label lblDirection;
+        private System.Windows.Forms.Label lblDatedirections;
     }
 }
