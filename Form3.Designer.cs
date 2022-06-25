@@ -36,8 +36,8 @@
             this.lblAll.AutoSize = true;
             this.lblAll.BackColor = System.Drawing.Color.Transparent;
             this.lblAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAll.ForeColor = System.Drawing.Color.PeachPuff;
-            this.lblAll.Location = new System.Drawing.Point(87, 89);
+            this.lblAll.ForeColor = System.Drawing.Color.Black;
+            this.lblAll.Location = new System.Drawing.Point(87, 40);
             this.lblAll.Name = "lblAll";
             this.lblAll.Size = new System.Drawing.Size(0, 25);
             this.lblAll.TabIndex = 0;
