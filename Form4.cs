@@ -21,7 +21,7 @@ namespace Contact_Tracing
             {
                 string dates = File.ReadAllText(file);
                 lblDateresults.Text = lblDateresults.Text + dates + "\n";
-            }                
+            }
         }
 
         private void Form4_Load(object sender, EventArgs e)
