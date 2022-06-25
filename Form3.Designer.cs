@@ -54,6 +54,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(708, 621);
             this.Controls.Add(this.lblAll);
+            this.MaximizeBox = false;
             this.Name = "Form3";
             this.Text = "All Info";
             this.Load += new System.EventHandler(this.Form3_Load);

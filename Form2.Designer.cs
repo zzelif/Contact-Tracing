@@ -41,6 +41,7 @@
             this.lblDatedirections = new System.Windows.Forms.Label();
             this.dtpAdvsearch = new System.Windows.Forms.DateTimePicker();
             this.btnAdvcontinue = new System.Windows.Forms.Button();
+            this.lblYesorno = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnShowall
@@ -206,6 +207,20 @@
             this.btnAdvcontinue.UseVisualStyleBackColor = false;
             this.btnAdvcontinue.Click += new System.EventHandler(this.btnAdvsearch_Click);
             // 
+            // lblYesorno
+            // 
+            this.lblYesorno.BackColor = System.Drawing.Color.Transparent;
+            this.lblYesorno.Font = new System.Drawing.Font("Berlin Sans FB", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYesorno.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lblYesorno.Image = ((System.Drawing.Image)(resources.GetObject("lblYesorno.Image")));
+            this.lblYesorno.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblYesorno.Location = new System.Drawing.Point(651, 417);
+            this.lblYesorno.Name = "lblYesorno";
+            this.lblYesorno.Size = new System.Drawing.Size(136, 32);
+            this.lblYesorno.TabIndex = 19;
+            this.lblYesorno.Text = "Yes or No only";
+            this.lblYesorno.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -213,6 +228,7 @@
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.BackgroundImage = global::Contact_Tracing.Properties.Resources._9523126451_674b6874d7_b;
             this.ClientSize = new System.Drawing.Size(828, 606);
+            this.Controls.Add(this.lblYesorno);
             this.Controls.Add(this.btnAdvcontinue);
             this.Controls.Add(this.dtpAdvsearch);
             this.Controls.Add(this.lblDatedirections);
@@ -247,5 +263,6 @@
         private System.Windows.Forms.Label lblDatedirections;
         private System.Windows.Forms.DateTimePicker dtpAdvsearch;
         private System.Windows.Forms.Button btnAdvcontinue;
+        private System.Windows.Forms.Label lblYesorno;
     }
 }

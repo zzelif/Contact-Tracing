@@ -51,7 +51,7 @@ namespace Contact_Tracing
                 StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\Date\Specified Date.txt");
                 foreach (string contents in dates)
                 {
-                    var lastItem = dates.LastOrDefault();
+                    _ = dates.LastOrDefault();
                     file.WriteLine(contents);
                 }
                 file.Close();
@@ -68,7 +68,7 @@ namespace Contact_Tracing
             string advSearch = txtbxAdvancedsearch.Text;
             string advDate = dtpAdvsearch.Text;
             int results = 0;
-            var allRecords = Directory.EnumerateFiles(@"C:\Users\Public\Documents\Contact Tracing\Records", ".txt");
+            var allRecords = Directory.EnumerateFiles(@"C:\Users\Public\Documents\Contact Tracing\Records\");
             foreach (string file in allRecords)
             {
                 string records = File.ReadAllText(file);
@@ -81,11 +81,13 @@ namespace Contact_Tracing
                         advsearch.Add(records);
                         continue;
                     }
+                    txtbxAdvancedsearch.Text = "";
                 }
             }
             if (results == 0)
             {
                 MessageBox.Show("No records were found");
+                txtbxAdvancedsearch.Text = "";
             }
             else
             {
@@ -99,6 +101,7 @@ namespace Contact_Tracing
                 MessageBox.Show("This file will be saved in the Contact Tracing folder");
                 Form5 search = new Form5();
                 search.ShowDialog();
+                txtbxAdvancedsearch.Text = "";
             }
         }
     }

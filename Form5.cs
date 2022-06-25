@@ -16,7 +16,7 @@ namespace Contact_Tracing
         public Form5()
         {
             InitializeComponent();
-            var searchFiles = Directory.GetFiles(@"C:\Users\Public\Documents\Contact Tracing\Advanced Search.txt");
+            var searchFiles = Directory.GetFiles(@"C:\Users\Public\Documents\Contact Tracing\");
             foreach (string file in searchFiles)
             {
                 string results = File.ReadAllText(file);
