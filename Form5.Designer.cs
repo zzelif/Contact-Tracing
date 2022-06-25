@@ -28,12 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lblAdvsearchresults = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // lblAdvsearchresults
+            // 
+            this.lblAdvsearchresults.AutoSize = true;
+            this.lblAdvsearchresults.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdvsearchresults.Location = new System.Drawing.Point(24, 26);
+            this.lblAdvsearchresults.Name = "lblAdvsearchresults";
+            this.lblAdvsearchresults.Size = new System.Drawing.Size(0, 23);
+            this.lblAdvsearchresults.TabIndex = 0;
+            // 
+            // Form5
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form5";
+            this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.Cornsilk;
+            this.ClientSize = new System.Drawing.Size(515, 534);
+            this.Controls.Add(this.lblAdvsearchresults);
+            this.MaximizeBox = false;
+            this.Name = "Form5";
+            this.Text = "Advanced Search";
+            this.Load += new System.EventHandler(this.Form5_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblAdvsearchresults;
     }
 }
