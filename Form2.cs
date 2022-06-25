@@ -27,7 +27,7 @@ namespace Contact_Tracing
 
         private void btnFilterdate_Click(object sender, EventArgs e)
         {
-            var dates = new List<string>();
+            List<string> dates = new List<string>();
             string Date = dtpFilter.Text;
             int dateResults = 0;
             var txtFiles = Directory.EnumerateFiles(@"C:\Users\Public\Documents\Contact Tracing");
@@ -52,11 +52,12 @@ namespace Contact_Tracing
                 StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\Date\" + dtpFilter.Text + ".txt");
                 foreach (string contents in dates)
                 {
-                    file.WriteLine(contents);
+                    var lastItem = dates.LastOrDefault();
+                    file.WriteLine(lastItem);
                 }
                 file.Close();
                 MessageBox.Show("Found " + dateResults + " records on the selected date");
-                MessageBox.Show("These will be saved and can be viewed at Contact Tracing folder");
+                MessageBox.Show("These will be saved and can be viewed in the Contact Tracing folder");
                 Form4 date = new Form4();
                 date.ShowDialog();
             }
