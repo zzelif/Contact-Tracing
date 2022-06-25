@@ -48,12 +48,11 @@ namespace Contact_Tracing
             }
             else
             {
-                StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\Date\SpecificDate.txt");
-                string lastItem;
+                StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\Date\Specified Date.txt");
                 foreach (string contents in dates)
                 {
-                    lastItem = dates.LastOrDefault();
-                    file.WriteLine(lastItem);
+                    var lastItem = dates.LastOrDefault();
+                    file.WriteLine(contents);
                 }
                 file.Close();
                 MessageBox.Show("Found " + dateResults + " record(s) on the selected date");

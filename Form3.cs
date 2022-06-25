@@ -20,7 +20,7 @@ namespace Contact_Tracing
             foreach (string file in txtFiles)
             {
                 string allcontent = File.ReadAllText(file);
-                lblAll.Text = lblAll.Text + allcontent.ToString() + "\n";
+                lblAll.Text = lblAll.Text + allcontent + "\n";
             }
         }
 
