@@ -30,7 +30,7 @@ namespace Contact_Tracing
             List<string> dates = new List<string>();
             string Date = dtpFilter.Text;
             int dateResults = 0;
-            var txtFiles = Directory.EnumerateFiles(@"C:\Users\Public\Documents\Contact Tracing");
+            var txtFiles = Directory.EnumerateFiles(@"C:\Users\Public\Documents\Contact Tracing\Records");
             foreach (string file in txtFiles)
             {
                 string contents = File.ReadAllText(file);
@@ -81,6 +81,46 @@ namespace Contact_Tracing
             if (txtbxAdvancedsearch.Text == "")
             {
                 txtbxAdvancedsearch.Text = "Yes, Yes " + " or Yes, No";
+            }
+        }
+
+        private void btnAdvsearch_Click(object sender, EventArgs e)
+        {
+            List<string> advsearch = new List<string>();
+            string advSearch = txtbxAdvancedsearch.Text;
+            string advDate = dtpAdvsearch.Text;
+            int results = 0;
+            var allRecords = Directory.EnumerateFiles(@"C:\Users\Public\Documents\Contact Tracing\Records", ".txt");
+            foreach (string file in allRecords)
+            {
+                string records = File.ReadAllText(file);
+                if (records.Contains(advDate))
+                {
+                    if (records.Contains(advSearch))
+                    {
+                        var all = records.Substring(records.IndexOf(advSearch) + 1);
+                        results++;
+                        advsearch.Add(records);
+                        continue;
+                    }
+                }
+            }
+            if (results == 0)
+            {
+                MessageBox.Show("No records were found");
+            }
+            else
+            {
+                StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\Advanced Search.txt");
+                foreach (string record in advsearch)
+                {
+                    file.WriteLine(record);
+                }
+                file.Close();
+                MessageBox.Show("Found " + results.ToString() + " records based on search");
+                MessageBox.Show("This file will be saved in the Contact Tracing folder");
+                Form5 search = new Form5();
+                search.ShowDialog();
             }
         }
     }

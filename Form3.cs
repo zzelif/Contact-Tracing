@@ -16,7 +16,7 @@ namespace Contact_Tracing
         public Form3()
         {
             InitializeComponent();
-            var txtFiles = Directory.GetFiles(@"C:\Users\Public\Documents\Contact Tracing");
+            var txtFiles = Directory.GetFiles(@"C:\Users\Public\Documents\Contact Tracing\Records");
             foreach (string file in txtFiles)
             {
                 string allcontent = File.ReadAllText(file);

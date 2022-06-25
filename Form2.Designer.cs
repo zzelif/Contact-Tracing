@@ -206,6 +206,7 @@
             this.btnAdvcontinue.TabIndex = 18;
             this.btnAdvcontinue.Text = "Continue";
             this.btnAdvcontinue.UseVisualStyleBackColor = false;
+            this.btnAdvcontinue.Click += new System.EventHandler(this.btnAdvsearch_Click);
             // 
             // Form2
             // 
