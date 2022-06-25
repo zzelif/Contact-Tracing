@@ -62,27 +62,6 @@ namespace Contact_Tracing
             }
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            txtbxAdvancedsearch.Text = "Yes, Yes " + " or Yes, No";
-        }
-
-        private void txtbxadvSearch_Enter(object sender, EventArgs e)
-        {
-            if (txtbxAdvancedsearch.Text == "Yes, Yes " + " or Yes, No")
-            {
-                txtbxAdvancedsearch.Text = "";
-            }
-        }
-
-        private void txtbxadvSearch_Leave(object sender, EventArgs e)
-        {
-            if (txtbxAdvancedsearch.Text == "")
-            {
-                txtbxAdvancedsearch.Text = "Yes, Yes " + " or Yes, No";
-            }
-        }
-
         private void btnAdvsearch_Click(object sender, EventArgs e)
         {
             List<string> advsearch = new List<string>();

@@ -149,8 +149,6 @@
             this.txtbxAdvancedsearch.Name = "txtbxAdvancedsearch";
             this.txtbxAdvancedsearch.Size = new System.Drawing.Size(343, 32);
             this.txtbxAdvancedsearch.TabIndex = 14;
-            this.txtbxAdvancedsearch.Enter += new System.EventHandler(this.txtbxadvSearch_Enter);
-            this.txtbxAdvancedsearch.Leave += new System.EventHandler(this.txtbxadvSearch_Leave);
             // 
             // lblDirection
             // 
@@ -230,7 +228,6 @@
             this.MaximizeBox = false;
             this.Name = "Form2";
             this.Text = "Administrator";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
