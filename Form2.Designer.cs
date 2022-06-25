@@ -144,11 +144,13 @@
             // txtbxAdvancedsearch
             // 
             this.txtbxAdvancedsearch.BackColor = System.Drawing.Color.White;
-            this.txtbxAdvancedsearch.Location = new System.Drawing.Point(268, 417);
+            this.txtbxAdvancedsearch.Location = new System.Drawing.Point(270, 417);
             this.txtbxAdvancedsearch.Multiline = true;
             this.txtbxAdvancedsearch.Name = "txtbxAdvancedsearch";
             this.txtbxAdvancedsearch.Size = new System.Drawing.Size(343, 32);
             this.txtbxAdvancedsearch.TabIndex = 14;
+            this.txtbxAdvancedsearch.Enter += new System.EventHandler(this.txtbxadvSearch_Enter);
+            this.txtbxAdvancedsearch.Leave += new System.EventHandler(this.txtbxadvSearch_Leave);
             // 
             // lblDirection
             // 
@@ -157,11 +159,11 @@
             this.lblDirection.ForeColor = System.Drawing.Color.Cornsilk;
             this.lblDirection.Image = ((System.Drawing.Image)(resources.GetObject("lblDirection.Image")));
             this.lblDirection.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblDirection.Location = new System.Drawing.Point(43, 417);
+            this.lblDirection.Location = new System.Drawing.Point(47, 417);
             this.lblDirection.Name = "lblDirection";
-            this.lblDirection.Size = new System.Drawing.Size(219, 32);
+            this.lblDirection.Size = new System.Drawing.Size(215, 32);
             this.lblDirection.TabIndex = 15;
-            this.lblDirection.Text = "Contact/Symptoms - Yes:";
+            this.lblDirection.Text = "Contact | Symptoms:";
             this.lblDirection.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblDatedirections
@@ -186,7 +188,7 @@
             this.dtpAdvsearch.CalendarTitleForeColor = System.Drawing.Color.Transparent;
             this.dtpAdvsearch.CalendarTrailingForeColor = System.Drawing.Color.Transparent;
             this.dtpAdvsearch.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpAdvsearch.Location = new System.Drawing.Point(268, 471);
+            this.dtpAdvsearch.Location = new System.Drawing.Point(270, 472);
             this.dtpAdvsearch.Name = "dtpAdvsearch";
             this.dtpAdvsearch.Size = new System.Drawing.Size(343, 29);
             this.dtpAdvsearch.TabIndex = 17;
