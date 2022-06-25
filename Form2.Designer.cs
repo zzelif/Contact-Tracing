@@ -39,6 +39,8 @@
             this.txtbxAdvancedsearch = new System.Windows.Forms.TextBox();
             this.lblDirection = new System.Windows.Forms.Label();
             this.lblDatedirections = new System.Windows.Forms.Label();
+            this.dtpAdvsearch = new System.Windows.Forms.DateTimePicker();
+            this.btnAdvcontinue = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowall
@@ -145,7 +147,7 @@
             this.txtbxAdvancedsearch.Location = new System.Drawing.Point(268, 417);
             this.txtbxAdvancedsearch.Multiline = true;
             this.txtbxAdvancedsearch.Name = "txtbxAdvancedsearch";
-            this.txtbxAdvancedsearch.Size = new System.Drawing.Size(243, 32);
+            this.txtbxAdvancedsearch.Size = new System.Drawing.Size(343, 32);
             this.txtbxAdvancedsearch.TabIndex = 14;
             // 
             // lblDirection
@@ -171,10 +173,37 @@
             this.lblDatedirections.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.lblDatedirections.Location = new System.Drawing.Point(43, 471);
             this.lblDatedirections.Name = "lblDatedirections";
-            this.lblDatedirections.Size = new System.Drawing.Size(219, 32);
+            this.lblDatedirections.Size = new System.Drawing.Size(219, 29);
             this.lblDatedirections.TabIndex = 16;
             this.lblDatedirections.Text = "Date of Record(s)...";
             this.lblDatedirections.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // dtpAdvsearch
+            // 
+            this.dtpAdvsearch.CalendarForeColor = System.Drawing.Color.Transparent;
+            this.dtpAdvsearch.CalendarMonthBackground = System.Drawing.Color.Transparent;
+            this.dtpAdvsearch.CalendarTitleBackColor = System.Drawing.Color.Transparent;
+            this.dtpAdvsearch.CalendarTitleForeColor = System.Drawing.Color.Transparent;
+            this.dtpAdvsearch.CalendarTrailingForeColor = System.Drawing.Color.Transparent;
+            this.dtpAdvsearch.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpAdvsearch.Location = new System.Drawing.Point(268, 471);
+            this.dtpAdvsearch.Name = "dtpAdvsearch";
+            this.dtpAdvsearch.Size = new System.Drawing.Size(343, 29);
+            this.dtpAdvsearch.TabIndex = 17;
+            // 
+            // btnAdvcontinue
+            // 
+            this.btnAdvcontinue.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdvcontinue.BackgroundImage = global::Contact_Tracing.Properties.Resources._9523126451_674b6874d7_b;
+            this.btnAdvcontinue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAdvcontinue.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvcontinue.ForeColor = System.Drawing.Color.Cornsilk;
+            this.btnAdvcontinue.Location = new System.Drawing.Point(317, 507);
+            this.btnAdvcontinue.Name = "btnAdvcontinue";
+            this.btnAdvcontinue.Size = new System.Drawing.Size(141, 63);
+            this.btnAdvcontinue.TabIndex = 18;
+            this.btnAdvcontinue.Text = "Continue";
+            this.btnAdvcontinue.UseVisualStyleBackColor = false;
             // 
             // Form2
             // 
@@ -183,6 +212,8 @@
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.BackgroundImage = global::Contact_Tracing.Properties.Resources._9523126451_674b6874d7_b;
             this.ClientSize = new System.Drawing.Size(828, 606);
+            this.Controls.Add(this.btnAdvcontinue);
+            this.Controls.Add(this.dtpAdvsearch);
             this.Controls.Add(this.lblDatedirections);
             this.Controls.Add(this.lblDirection);
             this.Controls.Add(this.txtbxAdvancedsearch);
@@ -214,5 +245,7 @@
         private System.Windows.Forms.TextBox txtbxAdvancedsearch;
         private System.Windows.Forms.Label lblDirection;
         private System.Windows.Forms.Label lblDatedirections;
+        private System.Windows.Forms.DateTimePicker dtpAdvsearch;
+        private System.Windows.Forms.Button btnAdvcontinue;
     }
 }
