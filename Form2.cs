@@ -48,15 +48,16 @@ namespace Contact_Tracing
             }
             else
             {
-                StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\Date\" + dtpFilter.Text + ".txt");
+                StreamWriter file = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\Date\SpecificDate.txt");
+                string lastItem;
                 foreach (string contents in dates)
                 {
-                    var lastItem = dates.LastOrDefault();
+                    lastItem = dates.LastOrDefault();
                     file.WriteLine(lastItem);
                 }
                 file.Close();
-                MessageBox.Show("Found " + dateResults + " records on the selected date");
-                MessageBox.Show("These will be saved and can be viewed in the Contact Tracing folder");
+                MessageBox.Show("Found " + dateResults + " record(s) on the selected date");
+                MessageBox.Show("This file will be saved in the Date folder");
                 Form4 date = new Form4();
                 date.ShowDialog();
             }

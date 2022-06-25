@@ -19,14 +19,14 @@ namespace Contact_Tracing
             var txtFiles = Directory.GetFiles(@"C:\Users\Public\Documents\Contact Tracing");
             foreach (string file in txtFiles)
             {
-                string contents = File.ReadAllText(file);
-                lblAll.Text += contents + "\n";
+                string allcontent = File.ReadAllText(file);
+                lblAll.Text = lblAll.Text + allcontent.ToString() + "\n";
             }
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

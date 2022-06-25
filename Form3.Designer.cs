@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.lblAll = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -38,7 +37,7 @@
             this.lblAll.BackColor = System.Drawing.Color.Transparent;
             this.lblAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAll.ForeColor = System.Drawing.Color.PeachPuff;
-            this.lblAll.Location = new System.Drawing.Point(23, 46);
+            this.lblAll.Location = new System.Drawing.Point(87, 89);
             this.lblAll.Name = "lblAll";
             this.lblAll.Size = new System.Drawing.Size(0, 25);
             this.lblAll.TabIndex = 0;
@@ -52,12 +51,10 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(570, 621);
+            this.ClientSize = new System.Drawing.Size(708, 621);
             this.Controls.Add(this.lblAll);
             this.Name = "Form3";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "All Info";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);

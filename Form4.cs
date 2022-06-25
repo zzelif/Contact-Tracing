@@ -16,14 +16,13 @@ namespace Contact_Tracing
         public Form4()
         {
             InitializeComponent();
-            var dateFiles = Directory.GetFiles(@"C:\Users\Public\Documents\Contact Tracing\Date");
+            var dateFiles = Directory.GetFiles(@"C:\Users\Public\Documents\Contact Tracing\Date\");
             foreach (string file in dateFiles)
             {
                 string dates = File.ReadAllText(file);
-                lblDateresults.Text += lblDateresults.Text + dates + "\n";
+                lblDateresults.Text = lblDateresults.Text + dates + "\n";
             }
         }
-
         private void Form4_Load(object sender, EventArgs e)
         {
 
