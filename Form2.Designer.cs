@@ -118,6 +118,7 @@
             this.Controls.Add(this.lblFilterdate);
             this.Controls.Add(this.lblShowalldata);
             this.Controls.Add(this.btnShowall);
+            this.MaximizeBox = false;
             this.Name = "Form2";
             this.Text = "Administrator";
             this.ResumeLayout(false);

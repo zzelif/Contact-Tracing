@@ -41,7 +41,6 @@ namespace Contact_Tracing
                     dates.Add(contents);
                     continue;
                 }
-
             }
             if (dateResults == 0)
             {

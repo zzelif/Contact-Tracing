@@ -20,7 +20,7 @@ namespace Contact_Tracing
             foreach (string file in dateFiles)
             {
                 string dates = File.ReadAllText(file);
-                lblDateresults.Text = lblDateresults.Text + dates + "\n";
+                lblDateresults.Text += lblDateresults.Text + dates + "\n";
             }
         }
 
