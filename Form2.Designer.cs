@@ -243,6 +243,7 @@
             this.Controls.Add(this.btnShowall);
             this.MaximizeBox = false;
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrator";
             this.ResumeLayout(false);
             this.PerformLayout();

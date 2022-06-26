@@ -35,7 +35,7 @@
             // 
             this.lblAdvsearchresults.AutoSize = true;
             this.lblAdvsearchresults.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdvsearchresults.Location = new System.Drawing.Point(24, 26);
+            this.lblAdvsearchresults.Location = new System.Drawing.Point(24, 9);
             this.lblAdvsearchresults.Name = "lblAdvsearchresults";
             this.lblAdvsearchresults.Size = new System.Drawing.Size(0, 23);
             this.lblAdvsearchresults.TabIndex = 0;
@@ -46,10 +46,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(515, 534);
+            this.ClientSize = new System.Drawing.Size(509, 553);
             this.Controls.Add(this.lblAdvsearchresults);
             this.MaximizeBox = false;
             this.Name = "Form5";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Advanced Search";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);

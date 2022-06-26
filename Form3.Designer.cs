@@ -35,11 +35,11 @@
             // 
             this.lblAll.AutoSize = true;
             this.lblAll.BackColor = System.Drawing.Color.Transparent;
-            this.lblAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAll.ForeColor = System.Drawing.Color.Black;
-            this.lblAll.Location = new System.Drawing.Point(87, 40);
+            this.lblAll.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAll.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblAll.Location = new System.Drawing.Point(22, 35);
             this.lblAll.Name = "lblAll";
-            this.lblAll.Size = new System.Drawing.Size(0, 25);
+            this.lblAll.Size = new System.Drawing.Size(0, 23);
             this.lblAll.TabIndex = 0;
             this.lblAll.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -50,12 +50,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(708, 621);
+            this.ClientSize = new System.Drawing.Size(511, 565);
             this.Controls.Add(this.lblAll);
             this.MaximizeBox = false;
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "All Info";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
