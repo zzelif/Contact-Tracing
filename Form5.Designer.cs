@@ -34,6 +34,7 @@
             // lblAdvsearchresults
             // 
             this.lblAdvsearchresults.AutoSize = true;
+            this.lblAdvsearchresults.BackColor = System.Drawing.Color.Transparent;
             this.lblAdvsearchresults.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdvsearchresults.Location = new System.Drawing.Point(24, 9);
             this.lblAdvsearchresults.Name = "lblAdvsearchresults";

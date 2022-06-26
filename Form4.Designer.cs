@@ -51,6 +51,7 @@
             this.Controls.Add(this.lblDateresults);
             this.MaximizeBox = false;
             this.Name = "Form4";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Filter Results";
             this.Load += new System.EventHandler(this.Form4_Load);

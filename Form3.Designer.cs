@@ -37,7 +37,7 @@
             this.lblAll.BackColor = System.Drawing.Color.Transparent;
             this.lblAll.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAll.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblAll.Location = new System.Drawing.Point(22, 35);
+            this.lblAll.Location = new System.Drawing.Point(22, 9);
             this.lblAll.Name = "lblAll";
             this.lblAll.Size = new System.Drawing.Size(0, 23);
             this.lblAll.TabIndex = 0;
@@ -57,6 +57,7 @@
             this.Controls.Add(this.lblAll);
             this.MaximizeBox = false;
             this.Name = "Form3";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "All Info";
             this.Load += new System.EventHandler(this.Form3_Load);
