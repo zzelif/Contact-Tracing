@@ -34,7 +34,7 @@
             // lblDateresults
             // 
             this.lblDateresults.AutoSize = true;
-            this.lblDateresults.BackColor = System.Drawing.SystemColors.Control;
+            this.lblDateresults.BackColor = System.Drawing.Color.Transparent;
             this.lblDateresults.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateresults.Location = new System.Drawing.Point(12, 9);
             this.lblDateresults.Name = "lblDateresults";
