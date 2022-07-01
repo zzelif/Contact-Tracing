@@ -115,6 +115,15 @@ namespace Contact_Tracing
                 {
                     tmrScan.Stop();
                     MessageBox.Show("Thank you for filling up this form");
+                    string infoGathered = result.ToString();
+                    StringBuilder sb = new StringBuilder(infoGathered);
+                    infoGathered = sb.ToString();
+                    string infoShown = infoGathered;
+                    MessageBox.Show(infoShown);
+                    StreamWriter write = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\Records\QR Code\" + txtFirstname.Text + "" + txtLastname.Text, true);
+                    write.WriteLine(infoGathered);
+                    write.Close();
+                    MessageBox.Show("This will be saved in the QR Code folder");
                     if (captureDevice.IsRunning)
                         captureDevice.Stop();
                 }
@@ -123,7 +132,8 @@ namespace Contact_Tracing
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            Application.Exit();
+            Environment.Exit(0);
         }
 
     }
