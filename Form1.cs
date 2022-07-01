@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using AForge.Video;
 using AForge.Video.DirectShow;
+using ZXing;
 
 namespace Contact_Tracing
 {
@@ -19,6 +20,8 @@ namespace Contact_Tracing
         {
             InitializeComponent();
         }
+        FilterInfoCollection filterInfoCollection;
+        VideoCaptureDevice captureDevice;
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
@@ -67,6 +70,46 @@ namespace Contact_Tracing
             else
             {
                 MessageBox.Show("Wrong Password");
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo filterinfo in filterInfoCollection)
+                cbxDevice.Items.Add(filterinfo.Name);
+            cbxDevice.SelectedIndex = 0;
+        }
+
+        private void btnScan_Click(object sender, EventArgs e)
+        {
+            captureDevice = new VideoCaptureDevice(filterInfoCollection[cbxDevice.SelectedIndex].MonikerString);
+            captureDevice.NewFrame += CaptureDevice_NewFrame;
+            captureDevice.Start();
+            tmrScan.Start();
+        }
+
+        private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            pbxScan.Image = (Bitmap)eventArgs.Frame.Clone();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
+
+        private void tmrScan_Tick(object sender, EventArgs e)
+        {
+            if (pbxScan.Image != null)
+            {
+                BarcodeReader barcodeReader = new BarcodeReader();
+                Result result = barcodeReader.Decode((Bitmap)pbxScan.Image);
+                if (result != null)
+                {
+                    tmrScan.Stop();
+                    MessageBox.Show("Thank you for filling up this form");
+                }
             }
         }
     }

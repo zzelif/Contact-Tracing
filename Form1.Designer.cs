@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formcttracing));
             this.lblDisplayname = new System.Windows.Forms.Label();
             this.lblName1 = new System.Windows.Forms.Label();
@@ -79,8 +80,15 @@
             this.btnAdmin = new System.Windows.Forms.Button();
             this.txtbxPassword = new System.Windows.Forms.TextBox();
             this.lblAdmin = new System.Windows.Forms.Label();
+            this.lblScan = new System.Windows.Forms.Label();
+            this.cbxDevice = new System.Windows.Forms.ComboBox();
+            this.lblCamera = new System.Windows.Forms.Label();
+            this.pbxScan = new System.Windows.Forms.PictureBox();
+            this.btnScan = new System.Windows.Forms.Button();
+            this.tmrScan = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCtimage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxScan)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDisplayname
@@ -669,13 +677,80 @@
             this.lblAdmin.TabIndex = 62;
             this.lblAdmin.Text = "Admin Only";
             // 
+            // lblScan
+            // 
+            this.lblScan.AutoSize = true;
+            this.lblScan.BackColor = System.Drawing.Color.Transparent;
+            this.lblScan.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScan.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lblScan.Location = new System.Drawing.Point(1145, 21);
+            this.lblScan.Name = "lblScan";
+            this.lblScan.Size = new System.Drawing.Size(207, 33);
+            this.lblScan.TabIndex = 63;
+            this.lblScan.Text = "Scan QR Code";
+            // 
+            // cbxDevice
+            // 
+            this.cbxDevice.FormattingEnabled = true;
+            this.cbxDevice.Location = new System.Drawing.Point(1226, 80);
+            this.cbxDevice.Name = "cbxDevice";
+            this.cbxDevice.Size = new System.Drawing.Size(259, 24);
+            this.cbxDevice.TabIndex = 64;
+            // 
+            // lblCamera
+            // 
+            this.lblCamera.AutoSize = true;
+            this.lblCamera.BackColor = System.Drawing.Color.Transparent;
+            this.lblCamera.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCamera.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lblCamera.Location = new System.Drawing.Point(1147, 82);
+            this.lblCamera.Name = "lblCamera";
+            this.lblCamera.Size = new System.Drawing.Size(78, 22);
+            this.lblCamera.TabIndex = 65;
+            this.lblCamera.Text = "Camera:";
+            // 
+            // pbxScan
+            // 
+            this.pbxScan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbxScan.Location = new System.Drawing.Point(1181, 119);
+            this.pbxScan.Name = "pbxScan";
+            this.pbxScan.Size = new System.Drawing.Size(279, 235);
+            this.pbxScan.TabIndex = 66;
+            this.pbxScan.TabStop = false;
+            // 
+            // btnScan
+            // 
+            this.btnScan.BackColor = System.Drawing.Color.Transparent;
+            this.btnScan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnScan.BackgroundImage")));
+            this.btnScan.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnScan.ForeColor = System.Drawing.Color.Cornsilk;
+            this.btnScan.Image = ((System.Drawing.Image)(resources.GetObject("btnScan.Image")));
+            this.btnScan.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnScan.Location = new System.Drawing.Point(1242, 368);
+            this.btnScan.Name = "btnScan";
+            this.btnScan.Size = new System.Drawing.Size(152, 44);
+            this.btnScan.TabIndex = 67;
+            this.btnScan.Text = "Scan";
+            this.btnScan.UseVisualStyleBackColor = false;
+            this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
+            // 
+            // tmrScan
+            // 
+            this.tmrScan.Interval = 1000;
+            this.tmrScan.Tick += new System.EventHandler(this.tmrScan_Tick);
+            // 
             // formcttracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1534, 643);
+            this.ClientSize = new System.Drawing.Size(1589, 724);
+            this.Controls.Add(this.btnScan);
+            this.Controls.Add(this.pbxScan);
+            this.Controls.Add(this.lblCamera);
+            this.Controls.Add(this.cbxDevice);
+            this.Controls.Add(this.lblScan);
             this.Controls.Add(this.lblAdmin);
             this.Controls.Add(this.txtbxPassword);
             this.Controls.Add(this.btnAdmin);
@@ -732,8 +807,11 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCtimage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxScan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -791,6 +869,12 @@
         private System.Windows.Forms.Button btnAdmin;
         private System.Windows.Forms.TextBox txtbxPassword;
         private System.Windows.Forms.Label lblAdmin;
+        private System.Windows.Forms.Label lblScan;
+        private System.Windows.Forms.ComboBox cbxDevice;
+        private System.Windows.Forms.Label lblCamera;
+        private System.Windows.Forms.PictureBox pbxScan;
+        private System.Windows.Forms.Button btnScan;
+        private System.Windows.Forms.Timer tmrScan;
     }
 }
 
