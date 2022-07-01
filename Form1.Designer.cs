@@ -675,7 +675,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1121, 643);
+            this.ClientSize = new System.Drawing.Size(1534, 643);
             this.Controls.Add(this.lblAdmin);
             this.Controls.Add(this.txtbxPassword);
             this.Controls.Add(this.btnAdmin);
