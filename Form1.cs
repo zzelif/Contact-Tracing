@@ -78,10 +78,73 @@ namespace Contact_Tracing
         {
             MessageBox.Show("This will be generated into a QR Code");
             QRCodeGenerator qr = new QRCodeGenerator();
-            string record = "Date: " + dtpDate.Text + Environment.NewLine + "PERSONAL INFORMATION" + Environment.NewLine + "First Name: " + txtFirstname.Text + Environment.NewLine + "Middle Name: " + txtMidname.Text;
+            string record = "Date: "
+                            + dtpDate.Text
+                            + Environment.NewLine
+                            + Environment.NewLine
+                            + "PERSONAL INFORMATION"
+                            + Environment.NewLine
+                            + "First Name: "
+                            + txtFirstname.Text
+                            + Environment.NewLine
+                            + "Middle Name: "
+                            + txtMidname.Text
+                            + Environment.NewLine
+                            + "Last Name: "
+                            + txtLastname.Text
+                            + Environment.NewLine
+                            + "Suffix: "
+                            + txtSuffix.Text
+                            + Environment.NewLine
+                            + "Age: "
+                            + nudAge.TextAlign
+                            + Environment.NewLine
+                            + "Gender: "
+                            + txtGender.Text
+                            + Environment.NewLine
+                            + "Phone Number: "
+                            + txtNumber.Text
+                            + Environment.NewLine
+                            + "Email Address: "
+                            + txtEmail.Text
+                            + Environment.NewLine
+                            + "Address: "
+                            + txtAddress.Text
+                            + Environment.NewLine
+                            + txtAddress1.Text
+                            + Environment.NewLine
+                            + txtAddress2.Text
+                            + Environment.NewLine
+                            + txtAddress3.Text
+                            + Environment.NewLine
+                            + txtAddress4.Text
+                            + Environment.NewLine
+                            + txtAddress5.Text
+                            + Environment.NewLine
+                            + Environment.NewLine
+                            + "In case of emergency"
+                            + Environment.NewLine
+                            + "Emergency Contact: "
+                            + txtEmergencyname.Text
+                            + Environment.NewLine
+                            + "Relationship: "
+                            + txtRelationship.Text
+                            + Environment.NewLine
+                            + "Contact Number: "
+                            + txtContactno.Text
+                            + Environment.NewLine
+                            + Environment.NewLine
+                            + "Have you been experiency ailments and/or symptoms?"
+                            + Environment.NewLine
+                            + txtQuestion.Text
+                            + Environment.NewLine
+                            + "Have you been in contact with anyone?"
+                            + Environment.NewLine
+                            + txtQuestion1.Text
+                            + Environment.NewLine;
             QRCodeData data = qr.CreateQrCode(record, QRCodeGenerator.ECCLevel.Q);
             QRCode code = new QRCode(data);
-            pbxGenerate.Image = code.GetGraphic(4);
+            pbxGenerate.Image = code.GetGraphic(3);
         }
 
         private void Form1_Load(object sender, EventArgs e)
