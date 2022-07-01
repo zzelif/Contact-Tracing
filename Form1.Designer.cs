@@ -86,9 +86,13 @@
             this.pbxScan = new System.Windows.Forms.PictureBox();
             this.btnScan = new System.Windows.Forms.Button();
             this.tmrScan = new System.Windows.Forms.Timer(this.components);
+            this.pbxGenerate = new System.Windows.Forms.PictureBox();
+            this.btnGenerate = new System.Windows.Forms.Button();
+            this.lblGenerate = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCtimage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxScan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxGenerate)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDisplayname
@@ -739,13 +743,53 @@
             this.tmrScan.Interval = 1000;
             this.tmrScan.Tick += new System.EventHandler(this.tmrScan_Tick);
             // 
+            // pbxGenerate
+            // 
+            this.pbxGenerate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbxGenerate.Location = new System.Drawing.Point(1181, 485);
+            this.pbxGenerate.Name = "pbxGenerate";
+            this.pbxGenerate.Size = new System.Drawing.Size(279, 235);
+            this.pbxGenerate.TabIndex = 68;
+            this.pbxGenerate.TabStop = false;
+            // 
+            // btnGenerate
+            // 
+            this.btnGenerate.BackColor = System.Drawing.Color.Transparent;
+            this.btnGenerate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGenerate.BackgroundImage")));
+            this.btnGenerate.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerate.ForeColor = System.Drawing.Color.Cornsilk;
+            this.btnGenerate.Image = ((System.Drawing.Image)(resources.GetObject("btnGenerate.Image")));
+            this.btnGenerate.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnGenerate.Location = new System.Drawing.Point(1242, 733);
+            this.btnGenerate.Name = "btnGenerate";
+            this.btnGenerate.Size = new System.Drawing.Size(152, 44);
+            this.btnGenerate.TabIndex = 69;
+            this.btnGenerate.Text = "Generate";
+            this.btnGenerate.UseVisualStyleBackColor = false;
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
+            // 
+            // lblGenerate
+            // 
+            this.lblGenerate.AutoSize = true;
+            this.lblGenerate.BackColor = System.Drawing.Color.Transparent;
+            this.lblGenerate.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenerate.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lblGenerate.Location = new System.Drawing.Point(1145, 449);
+            this.lblGenerate.Name = "lblGenerate";
+            this.lblGenerate.Size = new System.Drawing.Size(262, 33);
+            this.lblGenerate.TabIndex = 70;
+            this.lblGenerate.Text = "Generate QR Code";
+            // 
             // formcttracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1589, 724);
+            this.ClientSize = new System.Drawing.Size(1589, 785);
+            this.Controls.Add(this.lblGenerate);
+            this.Controls.Add(this.btnGenerate);
+            this.Controls.Add(this.pbxGenerate);
             this.Controls.Add(this.btnScan);
             this.Controls.Add(this.pbxScan);
             this.Controls.Add(this.lblCamera);
@@ -812,6 +856,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCtimage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxScan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxGenerate)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -875,6 +920,9 @@
         private System.Windows.Forms.PictureBox pbxScan;
         private System.Windows.Forms.Button btnScan;
         private System.Windows.Forms.Timer tmrScan;
+        private System.Windows.Forms.PictureBox pbxGenerate;
+        private System.Windows.Forms.Button btnGenerate;
+        private System.Windows.Forms.Label lblGenerate;
     }
 }
 

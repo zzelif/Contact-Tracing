@@ -11,6 +11,8 @@ using System.IO;
 using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
+using ZXing.Aztec;
+using QRCoder;
 
 namespace Contact_Tracing
 {
@@ -72,6 +74,15 @@ namespace Contact_Tracing
                 MessageBox.Show("Wrong Password");
             }
         }
+        private void btnGenerate_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This will be generated into a QR Code");
+            QRCodeGenerator qr = new QRCodeGenerator();
+            string record = "Date: " + dtpDate.Text + Environment.NewLine + "First Name: " + txtFirstname.Text;
+            QRCodeData data = qr.CreateQrCode(record, QRCodeGenerator.ECCLevel.Q);
+            QRCode code = new QRCode(data);
+            pbxGenerate.Image = code.GetGraphic(5);
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -94,11 +105,6 @@ namespace Contact_Tracing
             pbxScan.Image = (Bitmap)eventArgs.Frame.Clone();
         }
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-        }
-
         private void tmrScan_Tick(object sender, EventArgs e)
         {
             if (pbxScan.Image != null)
@@ -112,5 +118,11 @@ namespace Contact_Tracing
                 }
             }
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
+
     }
 }
