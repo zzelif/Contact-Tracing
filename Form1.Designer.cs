@@ -776,7 +776,7 @@
             this.pbxScan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbxScan.Location = new System.Drawing.Point(1181, 90);
             this.pbxScan.Name = "pbxScan";
-            this.pbxScan.Size = new System.Drawing.Size(334, 309);
+            this.pbxScan.Size = new System.Drawing.Size(321, 305);
             this.pbxScan.TabIndex = 71;
             this.pbxScan.TabStop = false;
             // 

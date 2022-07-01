@@ -128,7 +128,6 @@ namespace Contact_Tracing
                         captureDevice.Stop();
                     MessageBox.Show("Application will now restart");
                     Application.Restart();
-                    Environment.Exit(0);
                 }
             }
         }
