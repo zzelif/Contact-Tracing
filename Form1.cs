@@ -76,85 +76,12 @@ namespace Contact_Tracing
         }
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This will be generated into a QR Code"
-                            + Environment.NewLine
-                            + "Date: "
-                            + dtpDate.Text
-                            + Environment.NewLine
-                            + Environment.NewLine
-                            + "PERSONAL INFORMATION"
-                            + Environment.NewLine
-                            + "First Name: "
-                            + txtFirstname.Text);
+            MessageBox.Show("This will be generated into a QR Code");
             QRCodeGenerator qr = new QRCodeGenerator();
-            string record = "Date: " + dtpDate.Text + Environment.NewLine + Environment.NewLine + "PERSONAL INFORMATION" + Environment.NewLine + "First Name: " + txtFirstname.Text;
-            //string record = "Date: "
-            //                + dtpDate.Text
-            //                + Environment.NewLine
-            //                + Environment.NewLine
-            //                + "PERSONAL INFORMATION"
-            //                + Environment.NewLine
-            //                + "First Name: "
-            //                + txtFirstname.Text
-            //                + Environment.NewLine
-            //                + "Middle Name: "
-            //                + txtMidname.Text
-            //                + Environment.NewLine
-            //                + "Last Name: "
-            //                + txtLastname.Text
-            //                + Environment.NewLine
-            //                + "Suffix: "
-            //                + txtSuffix.Text
-            //                + Environment.NewLine
-            //                + "Age: "
-            //                + nudAge.TextAlign
-            //                + Environment.NewLine
-            //                + "Gender: "
-            //                + txtGender.Text
-            //                + Environment.NewLine
-            //                + "Phone Number: "
-            //                + txtNumber.Text
-            //                + Environment.NewLine
-            //                + "Email Address: "
-            //                + txtEmail.Text
-            //                + Environment.NewLine
-            //                + "Address: "
-            //                + txtAddress.Text
-            //                + Environment.NewLine
-            //                + txtAddress1.Text
-            //                + Environment.NewLine
-            //                + txtAddress2.Text
-            //                + Environment.NewLine
-            //                + txtAddress3.Text
-            //                + Environment.NewLine
-            //                + txtAddress4.Text
-            //                + Environment.NewLine
-            //                + txtAddress5.Text
-            //                + Environment.NewLine
-            //                + Environment.NewLine
-            //                + "In case of emergency"
-            //                + Environment.NewLine
-            //                + "Emergency Contact: "
-            //                + txtEmergencyname.Text
-            //                + Environment.NewLine
-            //                + "Relationship: "
-            //                + txtRelationship.Text
-            //                + Environment.NewLine
-            //                + "Contact Number: "
-            //                + txtContactno.Text
-            //                + Environment.NewLine
-            //                + Environment.NewLine
-            //                + "Have you been experiency ailments and/or symptoms?"
-            //                + Environment.NewLine
-            //                + txtQuestion.Text
-            //                + Environment.NewLine
-            //                + "Have you been in contact with anyone?"
-            //                + Environment.NewLine
-            //                + txtQuestion1.Text
-            //                + Environment.NewLine;
+            string record = "Date: " + dtpDate.Text + Environment.NewLine + Environment.NewLine + "PERSONAL INFORMATION" + Environment.NewLine + "First Name: " + txtFirstname.Text + Environment.NewLine + "Middle Name: " + txtMidname.Text + Environment.NewLine + "Last Name: " + txtLastname.Text + Environment.NewLine + "Suffix: " + txtSuffix.Text + Environment.NewLine + "Age: " + nudAge.TextAlign + Environment.NewLine + "Gender: " + txtGender.Text + Environment.NewLine + "Phone Number: " + txtNumber.Text + Environment.NewLine + "Email Address: " + txtEmail.Text + Environment.NewLine + "Address: " + txtAddress.Text + Environment.NewLine + txtAddress1.Text + Environment.NewLine + txtAddress2.Text + Environment.NewLine + txtAddress3.Text + Environment.NewLine + txtAddress4.Text + Environment.NewLine + txtAddress5.Text + Environment.NewLine + Environment.NewLine + "In case of emergency" + Environment.NewLine + "Emergency Contact: " + txtEmergencyname.Text + Environment.NewLine + "Relationship: " + txtRelationship.Text + Environment.NewLine + "Contact Number: " + txtContactno.Text + Environment.NewLine + Environment.NewLine + "Have you been experiency ailments and/or symptoms?" + Environment.NewLine + txtQuestion.Text + Environment.NewLine + "Have you been in contact with anyone?" + Environment.NewLine + txtQuestion1.Text + Environment.NewLine;
             QRCodeData data = qr.CreateQrCode(record, QRCodeGenerator.ECCLevel.Q);
             QRCode code = new QRCode(data);
-            pbxGenerate.Image = code.GetGraphic(3);
+            pbxGenerate.Image = code.GetGraphic(2);
         }
 
         private void Form1_Load(object sender, EventArgs e)
