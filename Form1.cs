@@ -183,12 +183,13 @@ namespace Contact_Tracing
                     infoGathered = sb.ToString();
                     string infoShown = infoGathered;
                     MessageBox.Show(infoShown);
-                    StreamWriter write = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\Records\QR Code\CTracing Records.txt", true);
+                    StreamWriter write = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\Records\QR Records.txt", true);
                     write.WriteLine(infoGathered);
                     write.Close();
                     MessageBox.Show("This will be saved in the QR Code folder");
                     if (captureDevice.IsRunning)
                         captureDevice.Stop();
+                    MessageBox.Show("Application will now restart");
                 }
             }
         }

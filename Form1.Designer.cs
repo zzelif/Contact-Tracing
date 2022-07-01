@@ -83,16 +83,16 @@
             this.lblScan = new System.Windows.Forms.Label();
             this.cbxDevice = new System.Windows.Forms.ComboBox();
             this.lblCamera = new System.Windows.Forms.Label();
-            this.pbxScan = new System.Windows.Forms.PictureBox();
             this.btnScan = new System.Windows.Forms.Button();
             this.tmrScan = new System.Windows.Forms.Timer(this.components);
             this.pbxGenerate = new System.Windows.Forms.PictureBox();
             this.btnGenerate = new System.Windows.Forms.Button();
             this.lblGenerate = new System.Windows.Forms.Label();
+            this.pbxScan = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCtimage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxScan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxGenerate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxScan)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDisplayname
@@ -696,7 +696,7 @@
             // cbxDevice
             // 
             this.cbxDevice.FormattingEnabled = true;
-            this.cbxDevice.Location = new System.Drawing.Point(1226, 80);
+            this.cbxDevice.Location = new System.Drawing.Point(1226, 59);
             this.cbxDevice.Name = "cbxDevice";
             this.cbxDevice.Size = new System.Drawing.Size(259, 24);
             this.cbxDevice.TabIndex = 64;
@@ -707,20 +707,11 @@
             this.lblCamera.BackColor = System.Drawing.Color.Transparent;
             this.lblCamera.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCamera.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lblCamera.Location = new System.Drawing.Point(1147, 82);
+            this.lblCamera.Location = new System.Drawing.Point(1147, 59);
             this.lblCamera.Name = "lblCamera";
             this.lblCamera.Size = new System.Drawing.Size(78, 22);
             this.lblCamera.TabIndex = 65;
             this.lblCamera.Text = "Camera:";
-            // 
-            // pbxScan
-            // 
-            this.pbxScan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxScan.Location = new System.Drawing.Point(1181, 119);
-            this.pbxScan.Name = "pbxScan";
-            this.pbxScan.Size = new System.Drawing.Size(293, 256);
-            this.pbxScan.TabIndex = 66;
-            this.pbxScan.TabStop = false;
             // 
             // btnScan
             // 
@@ -730,7 +721,7 @@
             this.btnScan.ForeColor = System.Drawing.Color.Cornsilk;
             this.btnScan.Image = ((System.Drawing.Image)(resources.GetObject("btnScan.Image")));
             this.btnScan.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnScan.Location = new System.Drawing.Point(1241, 381);
+            this.btnScan.Location = new System.Drawing.Point(1269, 401);
             this.btnScan.Name = "btnScan";
             this.btnScan.Size = new System.Drawing.Size(152, 44);
             this.btnScan.TabIndex = 67;
@@ -746,9 +737,9 @@
             // pbxGenerate
             // 
             this.pbxGenerate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxGenerate.Location = new System.Drawing.Point(1181, 485);
+            this.pbxGenerate.Location = new System.Drawing.Point(1181, 479);
             this.pbxGenerate.Name = "pbxGenerate";
-            this.pbxGenerate.Size = new System.Drawing.Size(293, 270);
+            this.pbxGenerate.Size = new System.Drawing.Size(321, 305);
             this.pbxGenerate.TabIndex = 68;
             this.pbxGenerate.TabStop = false;
             // 
@@ -760,7 +751,7 @@
             this.btnGenerate.ForeColor = System.Drawing.Color.Cornsilk;
             this.btnGenerate.Image = ((System.Drawing.Image)(resources.GetObject("btnGenerate.Image")));
             this.btnGenerate.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnGenerate.Location = new System.Drawing.Point(1241, 761);
+            this.btnGenerate.Location = new System.Drawing.Point(1269, 790);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(152, 44);
             this.btnGenerate.TabIndex = 69;
@@ -774,11 +765,20 @@
             this.lblGenerate.BackColor = System.Drawing.Color.Transparent;
             this.lblGenerate.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGenerate.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lblGenerate.Location = new System.Drawing.Point(1145, 449);
+            this.lblGenerate.Location = new System.Drawing.Point(1145, 447);
             this.lblGenerate.Name = "lblGenerate";
             this.lblGenerate.Size = new System.Drawing.Size(262, 33);
             this.lblGenerate.TabIndex = 70;
             this.lblGenerate.Text = "Generate QR Code";
+            // 
+            // pbxScan
+            // 
+            this.pbxScan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbxScan.Location = new System.Drawing.Point(1181, 90);
+            this.pbxScan.Name = "pbxScan";
+            this.pbxScan.Size = new System.Drawing.Size(334, 309);
+            this.pbxScan.TabIndex = 71;
+            this.pbxScan.TabStop = false;
             // 
             // formcttracing
             // 
@@ -786,12 +786,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1657, 834);
+            this.ClientSize = new System.Drawing.Size(1713, 973);
+            this.Controls.Add(this.pbxScan);
             this.Controls.Add(this.lblGenerate);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.pbxGenerate);
             this.Controls.Add(this.btnScan);
-            this.Controls.Add(this.pbxScan);
             this.Controls.Add(this.lblCamera);
             this.Controls.Add(this.cbxDevice);
             this.Controls.Add(this.lblScan);
@@ -855,8 +855,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCtimage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxScan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxGenerate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxScan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -917,12 +917,12 @@
         private System.Windows.Forms.Label lblScan;
         private System.Windows.Forms.ComboBox cbxDevice;
         private System.Windows.Forms.Label lblCamera;
-        private System.Windows.Forms.PictureBox pbxScan;
         private System.Windows.Forms.Button btnScan;
         private System.Windows.Forms.Timer tmrScan;
         private System.Windows.Forms.PictureBox pbxGenerate;
         private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.Label lblGenerate;
+        private System.Windows.Forms.PictureBox pbxScan;
     }
 }
 
