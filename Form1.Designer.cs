@@ -653,7 +653,7 @@
             // 
             // btnAdmin
             // 
-            this.btnAdmin.Location = new System.Drawing.Point(202, 609);
+            this.btnAdmin.Location = new System.Drawing.Point(202, 731);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(108, 24);
             this.btnAdmin.TabIndex = 60;
@@ -663,7 +663,7 @@
             // 
             // txtbxPassword
             // 
-            this.txtbxPassword.Location = new System.Drawing.Point(15, 609);
+            this.txtbxPassword.Location = new System.Drawing.Point(15, 733);
             this.txtbxPassword.Name = "txtbxPassword";
             this.txtbxPassword.PasswordChar = '*';
             this.txtbxPassword.Size = new System.Drawing.Size(158, 22);
@@ -675,7 +675,7 @@
             this.lblAdmin.BackColor = System.Drawing.Color.Transparent;
             this.lblAdmin.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdmin.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lblAdmin.Location = new System.Drawing.Point(9, 573);
+            this.lblAdmin.Location = new System.Drawing.Point(9, 687);
             this.lblAdmin.Name = "lblAdmin";
             this.lblAdmin.Size = new System.Drawing.Size(177, 33);
             this.lblAdmin.TabIndex = 62;

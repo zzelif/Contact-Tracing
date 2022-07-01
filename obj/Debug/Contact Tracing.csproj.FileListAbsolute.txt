@@ -13,3 +13,30 @@ C:\Users\ASUS\source\repos\Contact Tracing\obj\Debug\Contact_Tracing.Form2.resou
 C:\Users\ASUS\source\repos\Contact Tracing\obj\Debug\Contact_Tracing.Form3.resources
 C:\Users\ASUS\source\repos\Contact Tracing\obj\Debug\Contact_Tracing.Form4.resources
 C:\Users\ASUS\source\repos\Contact Tracing\obj\Debug\Contact_Tracing.Form5.resources
+C:\Users\ASUS\source\repos\continuation CTracing\bin\Debug\Contact Tracing.exe.config
+C:\Users\ASUS\source\repos\continuation CTracing\bin\Debug\Contact Tracing.exe
+C:\Users\ASUS\source\repos\continuation CTracing\bin\Debug\Contact Tracing.pdb
+C:\Users\ASUS\source\repos\continuation CTracing\bin\Debug\AForge.dll
+C:\Users\ASUS\source\repos\continuation CTracing\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\ASUS\source\repos\continuation CTracing\bin\Debug\AForge.Video.dll
+C:\Users\ASUS\source\repos\continuation CTracing\bin\Debug\QRCoder.dll
+C:\Users\ASUS\source\repos\continuation CTracing\bin\Debug\zxing.dll
+C:\Users\ASUS\source\repos\continuation CTracing\bin\Debug\zxing.presentation.dll
+C:\Users\ASUS\source\repos\continuation CTracing\bin\Debug\AForge.xml
+C:\Users\ASUS\source\repos\continuation CTracing\bin\Debug\AForge.Video.xml
+C:\Users\ASUS\source\repos\continuation CTracing\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\ASUS\source\repos\continuation CTracing\bin\Debug\zxing.xml
+C:\Users\ASUS\source\repos\continuation CTracing\bin\Debug\zxing.presentation.xml
+C:\Users\ASUS\source\repos\continuation CTracing\obj\Debug\Contact Tracing.csproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\continuation CTracing\obj\Debug\Contact Tracing.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS\source\repos\continuation CTracing\obj\Debug\Contact_Tracing.formcttracing.resources
+C:\Users\ASUS\source\repos\continuation CTracing\obj\Debug\Contact_Tracing.Form2.resources
+C:\Users\ASUS\source\repos\continuation CTracing\obj\Debug\Contact_Tracing.Form3.resources
+C:\Users\ASUS\source\repos\continuation CTracing\obj\Debug\Contact_Tracing.Form4.resources
+C:\Users\ASUS\source\repos\continuation CTracing\obj\Debug\Contact_Tracing.Form5.resources
+C:\Users\ASUS\source\repos\continuation CTracing\obj\Debug\Contact_Tracing.Properties.Resources.resources
+C:\Users\ASUS\source\repos\continuation CTracing\obj\Debug\Contact Tracing.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\continuation CTracing\obj\Debug\Contact Tracing.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\continuation CTracing\obj\Debug\Contact Tracing.csproj.CopyComplete
+C:\Users\ASUS\source\repos\continuation CTracing\obj\Debug\Contact Tracing.exe
+C:\Users\ASUS\source\repos\continuation CTracing\obj\Debug\Contact Tracing.pdb

@@ -115,6 +115,8 @@ namespace Contact_Tracing
                 {
                     tmrScan.Stop();
                     MessageBox.Show("Thank you for filling up this form");
+                    if (captureDevice.IsRunning)
+                        captureDevice.Stop();
                 }
             }
         }
