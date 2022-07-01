@@ -718,7 +718,7 @@
             this.pbxScan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbxScan.Location = new System.Drawing.Point(1181, 119);
             this.pbxScan.Name = "pbxScan";
-            this.pbxScan.Size = new System.Drawing.Size(279, 235);
+            this.pbxScan.Size = new System.Drawing.Size(293, 256);
             this.pbxScan.TabIndex = 66;
             this.pbxScan.TabStop = false;
             // 
@@ -730,7 +730,7 @@
             this.btnScan.ForeColor = System.Drawing.Color.Cornsilk;
             this.btnScan.Image = ((System.Drawing.Image)(resources.GetObject("btnScan.Image")));
             this.btnScan.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnScan.Location = new System.Drawing.Point(1242, 368);
+            this.btnScan.Location = new System.Drawing.Point(1241, 381);
             this.btnScan.Name = "btnScan";
             this.btnScan.Size = new System.Drawing.Size(152, 44);
             this.btnScan.TabIndex = 67;
@@ -748,7 +748,7 @@
             this.pbxGenerate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbxGenerate.Location = new System.Drawing.Point(1181, 485);
             this.pbxGenerate.Name = "pbxGenerate";
-            this.pbxGenerate.Size = new System.Drawing.Size(279, 235);
+            this.pbxGenerate.Size = new System.Drawing.Size(293, 270);
             this.pbxGenerate.TabIndex = 68;
             this.pbxGenerate.TabStop = false;
             // 
@@ -760,7 +760,7 @@
             this.btnGenerate.ForeColor = System.Drawing.Color.Cornsilk;
             this.btnGenerate.Image = ((System.Drawing.Image)(resources.GetObject("btnGenerate.Image")));
             this.btnGenerate.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnGenerate.Location = new System.Drawing.Point(1242, 733);
+            this.btnGenerate.Location = new System.Drawing.Point(1241, 761);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(152, 44);
             this.btnGenerate.TabIndex = 69;
@@ -786,7 +786,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1589, 785);
+            this.ClientSize = new System.Drawing.Size(1657, 834);
             this.Controls.Add(this.lblGenerate);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.pbxGenerate);

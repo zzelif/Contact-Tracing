@@ -78,10 +78,10 @@ namespace Contact_Tracing
         {
             MessageBox.Show("This will be generated into a QR Code");
             QRCodeGenerator qr = new QRCodeGenerator();
-            string record = "Date: " + dtpDate.Text + Environment.NewLine + "First Name: " + txtFirstname.Text;
+            string record = "Date: " + dtpDate.Text + Environment.NewLine + "PERSONAL INFORMATION" + Environment.NewLine + "First Name: " + txtFirstname.Text + Environment.NewLine + "Middle Name: " + txtMidname.Text;
             QRCodeData data = qr.CreateQrCode(record, QRCodeGenerator.ECCLevel.Q);
             QRCode code = new QRCode(data);
-            pbxGenerate.Image = code.GetGraphic(5);
+            pbxGenerate.Image = code.GetGraphic(4);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -120,7 +120,7 @@ namespace Contact_Tracing
                     infoGathered = sb.ToString();
                     string infoShown = infoGathered;
                     MessageBox.Show(infoShown);
-                    StreamWriter write = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\Records\QR Code\" + txtFirstname.Text + "" + txtLastname.Text, true);
+                    StreamWriter write = new StreamWriter(@"C:\Users\Public\Documents\Contact Tracing\Records\QR Code\CTracing Records.txt", true);
                     write.WriteLine(infoGathered);
                     write.Close();
                     MessageBox.Show("This will be saved in the QR Code folder");
